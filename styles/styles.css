@@ -126,12 +126,12 @@ footer p{
     }
 
     .ulist {
-        margin: 30px;
+        margin: 15px;
         font-size: 1.3em;
     }
 
     li {
-        padding: 10px;
+        padding-bottom: 30px;
     }
 
     footer {
