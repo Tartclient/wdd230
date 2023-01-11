@@ -49,7 +49,7 @@ main {
 }
 
 .title {
-    background-color: #ff6b35;
+    background-color: black;
     border-radius: 10px;
     margin: 10px;
     padding: 40px;
@@ -119,7 +119,7 @@ footer p{
 
     .title {
         border-radius: 10px;
-        margin: auto;
+        margin: 20px;
         padding: 15px;
         font-size: 1.5em;
     
