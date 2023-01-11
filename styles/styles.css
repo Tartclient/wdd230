@@ -55,6 +55,15 @@ li {
     list-style-type: none;
 }
 
+li a {
+    text-decoration: none;
+}
+
+li :hover {
+    color: #ff6b35;
+    text-decoration: underline;
+}
+
 .ulist {
     margin: 30px;
     font-size: 30px;
