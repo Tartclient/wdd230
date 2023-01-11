@@ -13,6 +13,10 @@ body {
 }
 
 header {
+    background-color: black;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 60px;
     font-family: 'Lexend', sans-serif;
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -28,6 +32,7 @@ header {
 }
 
 .nameTitle {
+    color: white;
     font-size: 5em;
     margin: auto;
     margin-left: 10px;
@@ -43,8 +48,11 @@ main {
 }
 
 .title {
-    margin: 40px;
-    color: #ff6b35;
+    background-color: #ff6b35;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 40px;
+    color: white;
     font-family: 'Lexend', sans-serif;
     font-size: 3em;
     grid-column: 2/5;
@@ -75,7 +83,8 @@ li :hover {
 }
 
 footer {
-    margin: 30px;
+    margin: auto;
+    padding: 10px;
     text-align: center;
     color: black;
 }
@@ -83,4 +92,43 @@ footer {
 footer p{
     font-family: 'Roboto Mono', monospace;
     margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+
+    header {
+        background-color: black;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 30px;
+    }
+    
+    .nameTitle {
+        color: white;
+        font-size: 2em;
+    }
+
+    .image {
+        margin: auto;
+        width: 110px;
+        height: 110px;
+        grid-column: 3/4;
+    }
+
+    .title {
+        border-radius: 10px;
+        margin: auto;
+        padding: 15px;
+        font-size: 1.5em;
+    }
+
+    .ulist {
+        margin: 30px;
+        font-size: 1.5em;
+    }
+
+    li {
+        padding: 10px;
+    }
+
 }
