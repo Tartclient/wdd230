@@ -45,6 +45,7 @@ main {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, auto);
+    
 }
 
 .title {
@@ -83,10 +84,11 @@ li :hover {
 }
 
 footer {
+    color: black;
     margin: auto;
     padding: 10px;
     text-align: center;
-    color: black;
+    
 }
 
 footer p{
@@ -125,7 +127,7 @@ footer p{
 
     .ulist {
         margin: 30px;
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     li {
