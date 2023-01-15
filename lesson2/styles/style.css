@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+#content {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+header {
+    font-family: 'Lexend', sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 25px;
+}
+
+header h1{
+    font-size: 3em;
+}
+
+#container {
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.box {
+    width: 90%;
+    background-color: black;
+    margin: 1em auto;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.boxTitle {
+    font-family: 'Lexend', sans-serif;
+    background-color: gray;
+    color: white;
+    font-size: 1.5em;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+h2, h4 {
+    text-align: center;
+    text-decoration: none;
+    margin: 20px;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.boxBody {
+    padding: 10px;
+}
+
+.boxBody p {
+    font-size: 1.4em;
+    padding: 10px;
+    margin: 10px;
+}
+
+img {
+    padding-top: 1em;
+    justify-items: center;
+    width: 100%;
+}
+
+h1, h3 {
+    padding: 15px;
+    line-height: .5em;
+    text-align: center;
+}
+h4 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    background-color: black;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+footer p {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    padding: 5px;
+}
+
+
+/* medium view */
+@media only screen and (min-width: 700px) {
+    #container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #special-box {
+        grid-column: span 2;
+    }
+}
+
+
+/* full view */
+@media only screen and (min-width: 1300px) {
+    #container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

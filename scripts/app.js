@@ -3,6 +3,6 @@ const currentYear = new Date().getFullYear();
 copyright.textContent = `©️ ${currentYear}`;
 
 
-const dateMod = document.querySelector('#dateMod')
-const currentDate = new Date();
-dateMod.textContent = `Last Updated: ${currentDate.toString()}`;
+const lastModDate = document.querySelector('#lastModDate')
+const lastMod = new Date(document.lastModified);
+lastModDate.textContent = `Last Updated: ${lastMod.toLocaleDateString("en-US")} ${lastMod.toLocaleTimeString()}`;
