@@ -12,23 +12,27 @@ header {
     text-align: center;
     color: white;
     border-radius: 10px;
-    margin: 15px;
+    margin: -15px 15px 15px 15px;
 }
 
 h1{
     font-size: 3em;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 h3 {
-    margin-top: -120px;
+    margin-top: -90px;
     font-size: 2em;
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 header a {
     color: white;
     text-decoration: none;
+}
+
+header a:hover {
+    color: orange;
 }
 
 main {
@@ -52,8 +56,8 @@ main {
     font-family: 'Lexend', sans-serif;
     background-color: gray;
     color: white;
-    font-size: 1.5em;
-    padding: 10px;
+    font-size: 1.4em;
+    padding: 1px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
@@ -62,6 +66,10 @@ main {
     text-align: center;
     text-decoration: none;
     color: white;
+}
+
+.box a:hover{
+    color: orange;
 }
 
 h2, 
@@ -86,7 +94,7 @@ h4 {
 }
 
 img {
-    padding-top: 1em;
+    padding-top: 2em;
     justify-items: center;
     width: 100%;
 }
