@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -8,26 +9,40 @@
 header {
     font-family: 'Lexend', sans-serif;
     background-color: black;
+    text-align: center;
     color: white;
     border-radius: 10px;
-    padding: 30px;
-    margin: 25px 15px;
+    margin: 15px;
 }
 
-header h1{
+h1{
     font-size: 3em;
+    padding: 60px 0;
+}
+
+h3 {
+    margin-top: -120px;
+    font-size: 2em;
+    padding: 60px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
 }
 
 main {
     font-family: 'Roboto', sans-serif;
     display: grid;
+    margin: 15px;
+    grid-gap: 15px;
     grid-template-columns: repeat(3, 1fr);
 }
 
+/*Box, titles and P*/
 .box {
     text-align: center;
     background-color: black;
-    margin: 1em;
     color: white;
     border-radius: 10px;
 }
@@ -43,16 +58,20 @@ main {
     border-top-left-radius: 10px;
 }
 
+.box a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
 h2, 
 h4 {
     text-align: center;
     margin: 20px;
 }
 
-a {
-    text-align: center;
-    text-decoration: none;
-    color: white;
+h4 {
+    font-size: 1.5em;
 }
 
 .boxBody {
@@ -60,7 +79,7 @@ a {
 }
 
 .boxBody p {
-    text-align: justify;
+    text-align: left;
     font-size: 1.4em;
     padding: 10px;
     margin: 20px;
@@ -72,15 +91,6 @@ img {
     width: 100%;
 }
 
-h1, 
-h3 {
-    padding: 15px;
-    line-height: .5em;
-    text-align: center;
-}
-h4 {
-    font-size: 1.5em;
-}
 
 p {
     font-family: 'Roboto', sans-serif;
