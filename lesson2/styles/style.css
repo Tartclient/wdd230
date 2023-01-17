@@ -5,39 +5,29 @@
     padding: 0;
 }
 
-
-#content {
-    max-width: 1100px;
-    margin: 20px auto;
-    padding: 5px;
-    border: 1px solid gray;
-    border-radius: 10px;
-}
-
 header {
     font-family: 'Lexend', sans-serif;
     background-color: black;
     color: white;
     border-radius: 10px;
     padding: 30px;
-    margin: 25px;
+    margin: 25px 15px;
 }
 
 header h1{
     font-size: 3em;
 }
 
-#container {
+main {
     font-family: 'Roboto', sans-serif;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .box {
-    width: 90%;
     text-align: center;
     background-color: black;
-    margin: 1em auto;
+    margin: 1em;
     color: white;
     border-radius: 10px;
 }
@@ -53,7 +43,8 @@ header h1{
     border-top-left-radius: 10px;
 }
 
-h2, h4 {
+h2, 
+h4 {
     text-align: center;
     margin: 20px;
 }
@@ -81,7 +72,8 @@ img {
     width: 100%;
 }
 
-h1, h3 {
+h1, 
+h3 {
     padding: 15px;
     line-height: .5em;
     text-align: center;
@@ -97,7 +89,7 @@ p {
 footer {
     background-color: black;
     padding: 10px;
-    margin: 30px;
+    margin: 15px;
     text-align: center;
     border-radius: 10px;
 }
@@ -108,26 +100,33 @@ footer p {
 }
 
 
-/* medium view */
-@media only screen and (min-width: 600px) {
-    #container {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #container section:nth-child(3) {
-		grid-column: span 2;
-	}
-
-}
-
-
-/* full view */
-@media only screen and (min-width: 1200px) {
-    #container {
-        grid-template-columns: 1fr 1fr 1fr;
+/*full view*/
+@media only screen {
+    main {
+        grid-template-columns: repeat(3, 1fr);
     }
     
-    #container section:nth-child(3) {
-		grid-column: span 1;
-	}
+    main section:nth-child(3) {
+        grid-column: span 1;
+    }
+}
+
+/*Medium view*/
+@media only screen and (max-width: 1400px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+/*Small view*/
+@media only screen and (max-width: 700px){
+    main {
+        grid-template-columns: 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 1;
+    }
 }
