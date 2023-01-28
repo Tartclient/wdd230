@@ -6,3 +6,9 @@ copyright.textContent = `©️ ${currentYear}`;
 const lastModDate = document.querySelector('#lastModDate')
 const lastMod = new Date(document.lastModified);
 lastModDate.textContent = `Last Updated: ${lastMod.toLocaleDateString("en-US")} ${lastMod.toLocaleTimeString()}`;
+
+
+//const colorsTable = document.querySelector('.colors');
+//const addTable = ;
+
+//colorsTable.addEventListener('click',multiplyNumbers);

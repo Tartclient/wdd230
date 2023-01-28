@@ -1,5 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
 
+:root {
+    
+    /* colors */
+    --primary: #0084A1;
+    --secondary: #FFFFFF;
+    --accent1: #09B8AB;
+    --accent2: #299218;
+    /*Font Colors*/
+    --heading-font: 'lexend', sans-serif;
+    --subttitle-font: 'lexend', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --footer-notes: 'Roboto Mono', monospace;
+  
+    /* alternative colors*/
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #215CAD;
+    --nav-link-color: #FDFDFD;
+    --nav-background-color: white;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: white;
+    /*Background colors*/
+    --background-color-title: black;
+    --background-color-page:white;
+    /*Font size*/
+    --headline: 2.8rem;
+    --subtitle: 1.8rem;
+    --paragraph: 1.2rem;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,80 +39,91 @@
 }
 
 body {
-    background-color: white;
+    background-color: var(--background-color-page);
     color: #000;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--paragraph-font);
     margin: 15px auto;
     max-width: 900px;
 }
 
 header {
-    background-color: black;
+    background-color: var(--background-color-title);
     border-radius: 10px;
+    color: var(--headline-color-on-color);
     margin: 15px;
     padding: 30px;
-    font-family: 'Lexend', sans-serif;
+    font-family: var(--heading-font);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    flex-direction: column;
 }
 
-header img {
-    border-radius: 50%;
+header h1 {
+    text-align: center;
+    color: var(--headline-color-on-color);
+    font-size: var(--headline);
+    margin: 30px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a:hover {
+	background-color: var(--nav-hover-background-color);
+	color: var(--nav-hover-link-color);
+    border-radius: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+nav ul li a {
+    color: var(--nav-link-color);
+    padding: 20px;
+    margin: 50px;
+    text-decoration: none;
+}
+
+main {
+    margin: 15px;
+    align-items: center;
+    /*overflow: hidden;*/
+}
+
+main h3, p {
+    margin: 40px; 
+    font-size: var(--paragraph); 
+} 
+
+main img {
     max-width: 200px;
     max-height: 200px;
+    display: block;
     width: auto;
     height: auto;
     margin: auto;
 }
 
-h1 {
-    color: white;
-    font-size: 3em;
-    margin: auto;
-}
-
-main {
-    display: grid;
-    grid-gap: 15px;
-    margin: 15px;
-    align-items: center;
-    grid-template-columns: 1fr;
-
-}
-
-h2 {
-    background-color: black;
+main h2 {
+    background-color: var(--background-color-title);
     border-radius: 10px;
-    padding: 40px;
-    color: white;
-    font-family: 'Lexend', sans-serif;
-    font-size: 2em;
+    padding: 15px;
+    color: var(--headline-color-on-color);
+    font-family: var(--subttitle-font);
+    font-size: var(--subtitle);
     text-align: center;
 }
 
-li {
-    padding-bottom: 30px;
-    list-style-type: none;
-}
-
-li a {
-    text-decoration: none;
-    color:black;
-}
-
-li :hover {
-    color: #ff6b35;
-    text-decoration: underline;
-}
-
-.ulist {
-    margin: 30px auto;
-    font-size: 1.5em;
+hr {
+    margin: 15px;
 }
 
 footer {
-    background-color: black;
+    background-color: var(--background-color-title);
     border-radius: 10px;
     color: white;
     margin: 15px;
@@ -90,45 +133,102 @@ footer {
 }
 
 footer p{
-    font-family: 'Roboto Mono', monospace;
+    font-family: var(--footer-notes);
     margin: 10px;
-    padding: 5px;
+    padding: 3px;
 }
 
-@media screen and (max-width: 700px)
-{
+.heading {
+    font-family: var(--headline);
+}
 
-    header {
-        background-color: black;
+.paragraph {
+    font-family: var(--paragraph);
+}
+
+.footer {
+    font-family: var(--footer-notes);
+}
+
+.colors {
+    width: 90%;
+    margin: 30px auto;
+    
+    text-align: center;
+    color: var(--paragraph-color-on-color);
+    font-family: var(--subttitle-font);
+}
+
+.colors th {
+    background-color: var(--paragraph-color-on-white) ;
+    padding: 15px;
+}
+
+.colors td {
+    width: 25%;
+    padding: 15px;
+    color: var(--paragraph-color-on-white);
+}
+
+.primary {
+    background-color: var(--primary);
+}
+
+.secondary {
+    background-color: var(--secondary);
+}
+
+.accent1 {
+    background-color: var(--accent1);
+}
+
+.accent2 {
+    background-color: var(--accent2);
+}
+
+/*Small Screen*/
+@media screen and (max-width: 700px)
+{ 
+  
+    header h1 {
+        font-size: 1.em;
+        margin: auto;
+    }
+
+    main h2 {
+        padding: 15px;
+        font-size: 1.4em;
+    
+    }
+
+    nav ul {
+        margin: 15px;
         flex-direction: column;
     }
     
-    h1 {
-        color: white;
-        font-size: 2em;
-        margin: auto;
-    }
-
-    header img {
-        margin: auto;
-        width: 110px;
-        height: 110px;
-    }
-
-    h2 {
+    nav ul li {
         padding: 15px;
-        font-size: 1.5em;
-    
-    }
-
-    .ulist {
-        margin: 40px;
-        font-size: 1.2em;
     }
 
     footer {
-        padding: 5px;
-        font-size: 12px;
+        padding: 3px;
+        font-size: 15px;   
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    .colors {
+        font-size: 15px; 
+    }
+
+    .colors th {
+        padding: 10px;
+    }
+    
+    .colors td {
+        padding: 10px;
     }
 
 }
