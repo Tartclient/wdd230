@@ -138,6 +138,11 @@ footer p{
     padding: 3px;
 }
 
+.personas h3 {
+    font-size: 1.5em;
+    margin-bottom: -30px;
+}
+
 .heading {
     font-family: var(--headline);
 }
