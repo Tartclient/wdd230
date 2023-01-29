@@ -1,22 +1,21 @@
 /*Small view*/
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 714px){
 
 
     /***************************************
     ************ Header section ************
     ****************************************/
-
-    header {
-        display: grid;
-        grid-template-columns: 50% 20%;
-        grid-template-rows: 2;
+    .header_logo {
+        display: flex;
+        grid-column: 1;
     }
     
-    nav {
-        display: flex;
-        grid-column: 2;
-    }
 
+    .header_logo img {
+        max-width: 110px;
+        max-height: 110px;
+    }
+    
     nav button {
         background-color: transparent;
         border-radius: 5px;
@@ -24,9 +23,10 @@
         font-size: 2.5rem;
     }
 
-    h1 {
-        font-size: 20px;
-        margin-left: 5%;
+    header h1 {
+        font-size: 18px;
+        align-self: center;
+        justify-content: center;
     }
 
     /***************************************
@@ -41,7 +41,7 @@
     }
     
     main section p{
-        padding: 5%;
+        padding: 4%;
         color: var(--main-color);
         font-size: 14px;
     }
@@ -69,19 +69,20 @@
         text-align: center;
         background-color: var(--main-color);
         flex-flow: column;
-
     }
 
-    footer h5{
-        font-size: 20px;
-        margin-bottom: -2%;
+    .logo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    footer h3 {
+        font-size: 30px;
     }
 
     footer .info_bottom {
         border-top: 1px solid white;
         font-size: 12px;
     }
-    footer .very-bottom p:nth-child(2){
-        font-weight: 700;
-    }
+
 }

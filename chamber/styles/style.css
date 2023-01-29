@@ -53,6 +53,7 @@ header {
 .header_logo {
     display: flex;
     grid-column: 1;
+    margin: 20px 0 0 20px;
 }
 
 .header_logo img {
@@ -108,6 +109,10 @@ header p {
 
 }
 
+#date {
+    font-family: var(--footer-notes); 
+}
+
 /***************************************
 ***************** Main *****************
 ****************************************/
@@ -127,6 +132,10 @@ main section {
     padding: 20px;
     font-size: 15px;
     box-shadow: 0 1px 5px 0px gray;
+}
+
+main section p {
+    padding: 4%;
 }
 
 main section:nth-child(1) {
@@ -174,6 +183,7 @@ main section:nth-child(6) {
 ****************************************/
 
 footer {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: .5fr 2fr 2fr 1fr;
     box-shadow: 0 1px 5px 0px gray;
@@ -203,6 +213,10 @@ footer section img {
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.logo {
+    margin-left: 20px;
 }
 
 .soc_media {
