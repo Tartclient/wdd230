@@ -1,0 +1,193 @@
+/*Small view*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+:root {
+    
+    /* colors */
+    --primary: #0084A1;
+    --secondary: #FFFFFF;
+    --accent1: #09B8AB;
+    --accent2: #299218;
+    /*Font Colors*/
+    --heading-font: 'lexend', sans-serif;
+    --subttitle-font: 'lexend', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --footer-notes: 'Roboto Mono', monospace;
+  
+    /* alternative colors*/
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #215CAD;
+    --nav-link-color: #FDFDFD;
+    --nav-background-color: white;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: white;
+    /*Background colors*/
+    --background-color-title: black;
+    --background-color-page:white;
+    /*Font size*/
+    --headline: 2.8rem;
+    --subtitle: 1.8rem;
+    --paragraph: 1.2rem;
+}
+
+@media only screen and (max-width: 700px){
+
+
+    /*header and navigation code*/
+
+    header{
+        background-color: var(--third-color);
+        display: grid;
+        grid-template-columns: 1fr 50% 1fr 1fr 1fr;
+        align-items: center;
+    }
+    header p{
+        grid-column: 1 / span 2;
+        grid-row: 3 / span 1;
+
+    }
+    nav{
+        display: grid;
+        grid-template-rows: 205 1fr;  
+        margin: 1em;
+    }
+    nav button{
+        background-color: transparent;
+        border-radius: 0;
+        color: var(--main-color);
+        font-size: 2rem;
+        border-color: rgb(187, 187, 187);
+
+    }
+
+    nav ul{
+        list-style-type: none;
+        margin-left: -25%;
+        display: none;
+        background-color: var(--main-color);
+        color: white;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        padding: 5%;
+        border-top: 1px solid rgb(178, 178, 178);
+    }
+
+    nav ul li a:hover{
+        background-color: white;
+        color: var(--main-color);
+        text-transform: uppercase;
+    }
+
+    nav ul.open{
+        display: block;
+        padding-right: 20%;
+        
+    } 
+
+
+    a img{
+        width: 70%;
+
+    }
+
+    h1{
+        font-size: 20px;
+        margin-left: 5%;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+
+    .date{
+        grid-column: 1 / span 5;
+        grid-row: 3 / span 1;
+        text-align: center;
+        padding: 1em;
+        margin: .5em;
+        background-color: var(--second-color);
+        color: var(--third-color);
+        font-family: var(--paragraph-font);
+    }
+
+    #hamburgerBtn span:nth-child(1){display: block;}
+    #hamburgerBtn span:nth-child(2){display: none;}
+
+    #hamburgerBtn.open span:nth-child(1){display: none;}
+    #hamburgerBtn.open span:nth-child(2){display: block;}
+
+    /* set fonts*/
+    h1, h2, h3, h4{
+        font-family: var(--header-font);
+    }
+    p, a{
+        font-family: var(--paragraph-font);
+    }
+
+
+    /* Here is the code for the main section */
+
+    main section{
+        background-color: rgb(222, 222, 222);
+        height: 100%;
+        margin: 10px;
+        border: solid 1px gray;
+    
+    }
+
+    main section p{
+        padding: 5%;
+        color: var(--main-color);
+        font-size: 14px;
+    }
+
+    .spotlight p{
+        border: solid 1px gray;
+        height: 100px;
+        margin: 5%;
+    }
+
+    main .join{display: none;}
+
+    .spotlight p:nth-child(3){
+        display: none;
+    }
+
+
+    /* Here is the footer*/
+
+    footer{
+        text-align: center;
+        background-color: var(--main-color);
+        color: white;
+        padding: 5%;
+    }
+
+    footer .logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    }
+
+    footer h5{
+        font-size: 20px;
+        margin-bottom: -2%;
+    }
+
+    footer .very-bottom{
+        border-top: 1px solid white;
+        font-size: 12px;
+    }
+    footer .very-bottom p:nth-child(2){
+        font-weight: 700;
+    }
+}

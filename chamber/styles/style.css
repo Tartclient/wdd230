@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+:root {
+    
+    /* colors */
+    --primary: #0084A1;
+    --secondary: #FFFFFF;
+    --accent1: #09B8AB;
+    --accent2: #299218;
+    /*Font Colors*/
+    --heading-font: 'lexend', sans-serif;
+    --subttitle-font: 'lexend', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
+    --footer-notes: 'Roboto Mono', monospace;
+  
+    /* alternative colors*/
+    --headline-color-on-white: black;  /* headlines on a white background */ 
+    --headline-color-on-color: white; /* headlines on a colored background */ 
+    --paragraph-color-on-white: black; /* paragraph text on a white background */ 
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
+    --paragraph-background-color: #215CAD;
+    --nav-link-color: #FDFDFD;
+    --nav-background-color: white;
+    --nav-hover-link-color: black;
+    --nav-hover-background-color: white;
+    /*Background colors*/
+    --background-color-title: black;
+    --background-color-page:white;
+    /*Font size*/
+    --headline: 2.8rem;
+    --subtitle: 1.8rem;
+    --paragraph: 1.2rem;
+}
+
+
+/*Header section*/
+header{
+    grid-template-columns: 1fr 30% 40% 1fr;
+}
+
+nav ul{display: block;
+background-color: transparent;
+display: flex;
+gap: 8%;
+grid-column: 3;
+}
+h1{
+    font-size: 38px;
+}
+
+
+nav{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+nav ul li a{
+    color: var(--main-color);
+    border: none;
+    font-size: 28px;
+}
+
+nav ul li a:hover{
+    background-color: transparent;
+    color: var(--second-color);
+}
+
+header button{
+    display: none;
+}
+
+header a img{width: 40%;
+}
+header section {
+    grid-column: 4;
+    margin-left: 50%;
+}
+header .logo{
+    width: 50%;
+}
+/*main section*/
+
+main{
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 1fr 1fr 1fr;
+    gap: 1rem;
+    column-gap: .5rem;
+}
+.spotlight p:nth-child(3){
+    display: block;
+}
+
+main section:nth-child(1){
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}   
+
+main section:nth-child(2){
+    grid-column: 1 span 1;
+    grid-row: 1;
+}
+
+    main section:nth-child(3){
+    grid-column: 1;
+    grid-row: 3;
+}    
+main section:nth-child(4){
+    grid-column: 1;
+    grid-row:2;
+}
+
+main section:nth-child(5){
+    grid-row: 3;
+    grid-column: 2;
+}
+main section:nth-child(6){
+    grid-row: 1 / span 3;
+    grid-column: 3;
+}
+
+.spotlight{
+    flex-direction: column;
+}
+
+.spotlight p{
+    width: 80%;
+}
+
+/* footer*/
+
+
+
+footer h5{
+    font-size: 32px;
+    margin-top: 0;
+}
+
+footer p{
+    font-size: 20px;
+}
+.very-bottom{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.very-bottom p{
+    display: block;
+    font-size: 18px;
+}
