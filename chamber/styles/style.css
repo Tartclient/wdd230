@@ -8,9 +8,9 @@
     --accent1: #09B8AB;
     --accent2: #299218;
     /*Font Colors*/
-    --heading-font: 'lexend', sans-serif;
+    --heading-font: 'Roboto', sans-serif;
     --subttitle-font: 'lexend', sans-serif;
-    --paragraph-font: 'Roboto', sans-serif;
+    --paragraph-font: 'lexend', sans-serif;
     --footer-notes: 'Roboto Mono', monospace;
   
     /* alternative colors*/
@@ -38,139 +38,179 @@ body {
     font-family: var(--paragraph-font);
 }
 
+/***************************************
+************ Header section ************
+****************************************/
+
 /*Header section*/
 header {
     display: grid;
-    grid-template-columns: 1fr 30% 40% 1fr;
+    grid-template-columns: 1fr 30% 1fr;
+}
+
+.header_logo {
+    display: flex;
+    grid-column: 1;
+}
+
+.header_logo img {
+    padding: 15px;
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+    margin: auto;
+}
+
+header h1 {
+    font-size: 30px;
+    font-family: var(--heading-font);
+}
+
+nav {   
+    justify-content: space-between;
+    font-family: var(--footer-notes);
+    align-self: center;
 }
 
 nav ul {
-    display: block;
-    background-color: transparent;
     display: flex;
-    gap: 8%;
+    gap: 10px;
     grid-column: 3;
-}
-h1{
-    font-size: 38px;
+    
 }
 
-
-nav{
-    grid-column: 3;
-    grid-row: 1;
+nav li {
+    display: flex;
+    text-decoration: none;
+    border: none;  
 }
 
-nav ul li a{
-    color: var(--nav);
-    border: none;
-    font-size: 28px;
+nav ul li a {
+    color: var(--nav-link-color);
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+
+    font-size: 20px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: transparent;
-    color: var(--second-color);
+    color: var(--nav-hover-link-color);
 }
 
-header button{
+header button {
     display: none;
 }
 
-header a img {
-    max-width: 50px;
-    max-height: 50px;
-    display: block;
-    width: auto;
-    height: auto;
-    margin: auto;
-    width: 40%;
-}
-header section {
-    grid-column: 4;
-    margin-left: 50%;
-}
-header .logo{
-    max-width: 150px;
-    max-height: 150px;
-    display: block;
-    width: auto;
-    height: auto;
-    margin: auto;
-}
-/*main section*/
+/***************************************
+***************** Main *****************
+****************************************/
 
-main{
+main {
+    margin: 50px;
+    display: grid;
     grid-template-columns: 25% 50% 25%;
     grid-template-areas: 1fr 1fr 1fr;
     gap: 1rem;
-    column-gap: .5rem;
-}
-.spotlight p:nth-child(3){
-    display: block;
+    column-gap: 1rem;
 }
 
-main section:nth-child(1){
+main section {
+    background-color: #0084A1;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+main section:nth-child(1) {
     grid-column: 2;
     grid-row: 1 / span 2;
 
 }   
 
-main section:nth-child(2){
+main section:nth-child(2) {
     grid-column: 1 span 1;
     grid-row: 1;
 }
 
-    main section:nth-child(3){
+main section:nth-child(3) {
     grid-column: 1;
     grid-row: 3;
 }    
-main section:nth-child(4){
+main section:nth-child(4) {
     grid-column: 1;
     grid-row:2;
 }
 
-main section:nth-child(5){
-    grid-row: 3;
+main section:nth-child(5) {
     grid-column: 2;
+    grid-row: 3;
 }
-main section:nth-child(6){
-    grid-row: 1 / span 3;
+main section:nth-child(6) {
     grid-column: 3;
+    grid-row: 1 / span 3;
 }
 
-.spotlight{
+.spotlight p:nth-child(3) {
+    display: block;
+}
+
+.spotlight {
     flex-direction: column;
 }
 
-.spotlight p{
+.spotlight p {
     width: 80%;
 }
 
-/* footer*/
+/***************************************
+**************** Footer ****************
+****************************************/
 
-footer h3{
-    font-size: 32px;
-    margin-top: 0;
+footer {
+    display: grid;
+    grid-template-columns: .5fr 2fr 2fr 1fr;
+}
+
+footer h3 {
+    font-size: 15px;
+    font-family: var(--heading-font);
 }
 
 footer a img {
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
     display: block;
-    width: auto;
     height: auto;
     margin: auto;
 }
 
-footer p{
-    font-size: 20px;
+footer p {
+    font-size: 15px;
+    font-family: var(--footer-notes);
 }
-.very-bottom{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.very-bottom p{
+
+footer section img {
+    width: 50px;
     display: block;
-    font-size: 18px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center; 
 }
+
+.soc_media {
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.info_bottom {
+    margin-top: 40px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    grid-column: 1 / span 4;
+    grid-row:  2;
+    font-size: 15px;
+}
+
+
