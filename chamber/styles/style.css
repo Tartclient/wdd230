@@ -19,9 +19,9 @@
     --paragraph-color-on-white: black; /* paragraph text on a white background */ 
     --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
     --paragraph-background-color: #215CAD;
-    --nav-link-color: #FDFDFD;
+    --nav-link-color: black;
     --nav-background-color: white;
-    --nav-hover-link-color: black;
+    --nav-hover-link-color: #0084A1;
     --nav-hover-background-color: white;
     /*Background colors*/
     --background-color-title: black;
@@ -32,17 +32,24 @@
     --paragraph: 1.2rem;
 }
 
+body {
+    background-color: var(--background-color-page);
+    color: #000;
+    font-family: var(--paragraph-font);
+}
 
 /*Header section*/
-header{
+header {
+    display: grid;
     grid-template-columns: 1fr 30% 40% 1fr;
 }
 
-nav ul{display: block;
-background-color: transparent;
-display: flex;
-gap: 8%;
-grid-column: 3;
+nav ul {
+    display: block;
+    background-color: transparent;
+    display: flex;
+    gap: 8%;
+    grid-column: 3;
 }
 h1{
     font-size: 38px;
@@ -55,7 +62,7 @@ nav{
 }
 
 nav ul li a{
-    color: var(--main-color);
+    color: var(--nav);
     border: none;
     font-size: 28px;
 }
@@ -69,14 +76,26 @@ header button{
     display: none;
 }
 
-header a img{width: 40%;
+header a img {
+    max-width: 50px;
+    max-height: 50px;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
+    width: 40%;
 }
 header section {
     grid-column: 4;
     margin-left: 50%;
 }
 header .logo{
-    width: 50%;
+    max-width: 150px;
+    max-height: 150px;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 /*main section*/
 
@@ -129,11 +148,18 @@ main section:nth-child(6){
 
 /* footer*/
 
-
-
-footer h5{
+footer h3{
     font-size: 32px;
     margin-top: 0;
+}
+
+footer a img {
+    max-width: 100px;
+    max-height: 100px;
+    display: block;
+    width: auto;
+    height: auto;
+    margin: auto;
 }
 
 footer p{
