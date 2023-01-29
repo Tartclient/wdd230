@@ -42,8 +42,6 @@ body {
     background-color: var(--background-color-page);
     color: #000;
     font-family: var(--paragraph-font);
-    margin: 15px auto;
-    max-width: 900px;
 }
 
 header {
