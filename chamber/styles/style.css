@@ -68,7 +68,7 @@ header h1 {
     font-size: 25px;
     font-family: var(--heading-font);
 }
-
+/*
 nav {   
     font-family: var(--footer-notes);
     align-self: center;
@@ -93,6 +93,33 @@ nav a {
 }
 
 nav ul li a:hover {
+    color: var(--nav-hover-link-color);
+}
+*/
+
+nav {
+    align-self: center;
+    justify-content: center;
+}
+
+.mainNav {
+    display: flex;
+    font-family: var(--footer-notes);
+}
+
+.mainNav li {
+    display: block; /* change state in small view */
+    flex: 1 1 auto;
+}
+.mainNav a {
+    color: var(--nav-link-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.mainNav a:hover {
+    transition: 0.2s;
     color: var(--nav-hover-link-color);
 }
 
@@ -233,5 +260,3 @@ footer section img {
     grid-row:  2;
     font-size: 15px;
 }
-
-

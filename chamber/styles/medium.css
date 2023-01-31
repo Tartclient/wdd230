@@ -4,9 +4,6 @@
     /***************************************
     ************ Header section ************
     ****************************************/
-    nav a {
-        display: none;
-    }
     nav #hmbrgr-bttn {
         float: right;
         display: block;
@@ -20,9 +17,24 @@
     }
 
     nav button:hover {
+        transition: 0.5s;
         background-color: var(--accent1);
+        color: var(--secondary);
     }
 
+    .mainNav {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .mainNav li {
+        display: none;
+    }
+
+    .responsive li {
+        display: flex;
+        flex-flow: column;
+    }
   
     /***************************************
     ***************** Main *****************
@@ -116,6 +128,6 @@
     .info_bottom  p {
         display: inline;
         padding: .2rem;
-    }
-   
+    } 
 }
+
