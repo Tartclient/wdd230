@@ -73,16 +73,22 @@
     }
 
     .logo {
-        max-width: 100px;
-        max-height: 100px;
+        display: inline;
+        max-width: 120px;
+        max-height: 120px;
+        margin: 0px;
     }
 
     footer h3 {
-        font-size: 30px;
+        font-size: 15px;
     }
 
     footer .info_bottom {
         border-top: 1px solid white;
+        font-size: 12px;
+    }
+
+    footer section p {
         font-size: 12px;
     }
 
