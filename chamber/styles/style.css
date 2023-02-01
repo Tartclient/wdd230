@@ -45,7 +45,7 @@ body {
 /*Header section*/
 header {
     display: grid;
-    grid-template-columns: 30% 50% 20%;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     box-shadow: 0 1px 5px 0px gray;
 }
