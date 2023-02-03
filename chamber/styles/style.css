@@ -53,7 +53,7 @@ header {
 .header_logo {
     display: flex;
     grid-column: 1;
-    margin: 20px 0 0 20px;
+    margin: 20px;
 }
 
 .header_logo img {
@@ -148,21 +148,21 @@ main {
     margin: 30px;
     display: grid;
     grid-template-columns: 25% 50% 25%;
-    grid-template-areas: 1fr 1fr 1fr;
     gap: 1rem;
-    column-gap: 1rem;
 }
 
 main section {
     background-color: #0084A1;
     color: #FFFFFF;
-    padding: 20px;
-    font-size: 15px;
-    box-shadow: 0 1px 5px 0px gray;
+    padding: 10px;
+    font-size: 10px;
+    box-shadow: 0 1px 5px 0 gray;
+    height: auto;
+  
 }
 
-main section p {
-    padding: 4%;
+main section h2 {
+    padding: 5%;
 }
 
 main section:nth-child(1) {
@@ -195,16 +195,16 @@ main section:nth-child(6) {
 }
 
 .spotlight {
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
-.spotlight p{
+.spotlight h2 {
     border: solid 1px gray;
-    height: 100px;
-    padding: 10px;
-    margin: 5%;
+    height: 150px;
+    padding: 10px; 
 }
-
 /***************************************
 **************** Footer ****************
 ****************************************/
@@ -225,9 +225,7 @@ footer a img {
     padding: 10px;
     max-width: 80px;
     max-height: 80px;
-    display: block;
-    height: auto;
-    margin: auto;
+
 }
 
 footer p {
@@ -237,7 +235,8 @@ footer p {
 
 footer section img {
     width: 40px;
-    display: flex;
+    display: inline;
+    margin: 10px;
     align-content: center;
     justify-content: center;
 }
@@ -252,11 +251,13 @@ footer section img {
 }
 
 .info_bottom {
+    font-family: var(--footer-notes);
     margin-top: 50px;
+    grid-column: 1 / 5;
+    grid-row:  2;
+    font-size: 15px;
     display: flex;
     align-content: center;
     justify-content: center;
-    grid-column: 1 / span 4;
-    grid-row:  2;
-    font-size: 15px;
 }
+

@@ -6,12 +6,7 @@
     /***************************************
     ************ Header section ************
     ****************************************/
-    .header_logo {
-        display: flex;
-        grid-column: 1;
-    }
     
-
     .header_logo img {
         max-width: 110px;
         max-height: 110px;
@@ -40,21 +35,23 @@
         display: flex;
         flex-flow: column;
     }
+
+    main section {
+        height: 16rem;
+    }
     
-    main section p{
-        padding: 4%;
+    main h2{
         color: var(--main-color);
         font-size: 14px;
     }
 
-    .spotlight p{
-        border: solid 1px gray;
-        height: 100px;
-        margin: 5%;
+    .spotlight {
+        flex-direction: column;
     }
 
-    .spotlight p:nth-child(3){
-        display: none;
+    .spotlight h2 {
+        border: solid 1px gray;
+        height: 150px;
     }
     
     main .join{
@@ -73,24 +70,31 @@
     }
 
     .logo {
-        display: inline;
         max-width: 120px;
         max-height: 120px;
         margin: 0px;
     }
 
     footer h3 {
-        font-size: 15px;
+        font-size: 16px;
     }
-
-    footer .info_bottom {
-        border-top: 1px solid white;
-        font-size: 12px;
-    }
-
+    
     footer section p {
         font-size: 12px;
     }
+
+    .soc_media img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+
+    .info_bottom {
+        border-top: 1px solid white;
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+
 
     /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
     html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}

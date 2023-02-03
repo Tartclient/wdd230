@@ -29,11 +29,6 @@
         background-color: var(--accent1);
         color: var(--secondary);
     }
-
-    .mainNav {
-        margin: 0;
-        padding: 0;
-    }
     
     .mainNav li {
         display: none;
@@ -41,6 +36,13 @@
 
     .responsive li {
         display: flex;
+        align-self: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .responsive {
+        display: block;
     }
   
     /***************************************
@@ -50,7 +52,7 @@
     main {
         display: grid;
         gap: 10px;
-        margin: rem;
+        margin: 1rem;
         grid-template-columns: 70% 30%;
     }
 
@@ -92,49 +94,31 @@
     }
     
     .spotlight {
-        display: flex;
-        flex-flow: row;
+        flex-flow: row;  
     }
 
-    .spotlight p:nth-child(3){
+    .spotlight h2:nth-child(3){
         display: none;
     }
     
-    .spotlight p {
+    .spotlight h2 {
         width: 100%;
-        height: 150px;
+
         margin: 3px;
     }
     
     main section {
         grid-column: 1 / span 2;
     }
-
-    main section p {
-        padding: 3%;
-    }
     
     /***************************************
     **************** Footer ****************
     ****************************************/
+    
+    .info_bottom h4 {
+        margin: 30px;
 
-      
-    footer {
-        display: grid;
-        grid-template-columns: 15% 40% 30% 10%;
-    } 
-    
-    footer p {
-        padding-top: 5px;
     }
-    
-    .info_bottom {
-        grid-column: 1 / span 3;
-        padding-top: 1rem;
-    }
-    .info_bottom  p {
-        display: inline;
-        padding: .2rem;
-    } 
+
 }
 
