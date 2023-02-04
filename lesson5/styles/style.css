@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
 
+:root {
+    
+    /* colors */
+    --primary: #0084A1;
+    --secondary: #FFFFFF;
+    --accent1: #09B8AB;
+    --accent2: #299218;
+    /*Font Colors*/
+    --heading-font: 'Roboto', sans-serif;
+    --subttitle-font: 'lexend', sans-serif;
+    --paragraph-font: 'lexend', sans-serif;
+    --footer-notes: 'Roboto Mono', monospace;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -11,18 +25,21 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-family: Acme, Arial, sans-serif;
+	font-family: var(--subttitle-font);
 }
 
 h1 {
 	font-size: 1.5rem;
+	font-family: var(--heading-font);
 }
 
 main {
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
 	padding: 1rem;
-	background-color: #ddd;
+	color: #FFFFFF;
+	background-color: black;
 	display: flex;
 	flex-direction: column;
 }
@@ -30,6 +47,7 @@ main {
 input,
 button {
 	padding: 0.5rem;
+	border-radius: 10px;
 }
 
 button {
@@ -58,6 +76,11 @@ li {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+
+footer {
+	font-family: var(--footer-notes);
+	
 }
 
 @media only screen and (min-width: 32.5em) {

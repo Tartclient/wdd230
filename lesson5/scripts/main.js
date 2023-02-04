@@ -1,3 +1,4 @@
+/* button menu */
 const input = document.querySelector("#favchap");
 const list = document.querySelector("#list");
 const button = document.querySelector("button");
@@ -22,3 +23,13 @@ button.addEventListener("click", () => {
     input.value = ""; 
     input.focus();
 });
+
+/* Date */
+const copyright = document.querySelector('#copyright')
+const currentYear = new Date().getFullYear();
+copyright.textContent = `©️ ${currentYear}`;
+
+
+const lastModDate = document.querySelector('#lastModDate')
+const lastMod = new Date(document.lastModified);
+lastModDate.textContent = `Last Updated: ${lastMod.toLocaleDateString("en-US")} ${lastMod.toLocaleTimeString()}`;
