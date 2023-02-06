@@ -50,13 +50,13 @@ header {
     box-shadow: 0 1px 5px 0px gray;
 }
 
-.header_logo {
+.headerLogo {
     display: flex;
     grid-column: 1;
     margin: 20px;
 }
 
-.header_logo img {
+.headerLogo img {
     padding: 10px;
     max-width: 130px;
     max-height: 130px;
@@ -222,6 +222,7 @@ main section:nth-child(6) {
 .welcome-bttn:hover, .join-bttn:hover {
     transition: 0.5s;
     background-color: var(--accent1);
+    cursor: pointer;
 }
 
 /***************************************
