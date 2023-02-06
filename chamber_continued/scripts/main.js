@@ -28,8 +28,8 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 
 /*Weather*/
 
-link = "https://api.openweathermap.org/data/2.5/weather?q=Seattle&appid=4def50accbd787e425567d862bd5108f";
-const request = new XMLHttpRequest();
+link = "https://api.openweathermap.org/data/2.5/weather?q=seattle&appid=4def50accbd787e425567d862bd5108f";
+var request = new XMLHttpRequest();
 
 request.open('GET', link, true);
 
@@ -39,7 +39,7 @@ request.onload = function () {
 
     document.querySelector('#weather').innerHTML = obj.weather[0].description;
     document.getElementById('location').innerHTML = obj.name;
-    document.getElementById('temp').innerHTML = obj.main.temp - 273.15;
+    document.getElementById('temp').innerHTML = Math.round(obj.main.temp - 236);
     document.getElementById('icon').src = "http://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
 
     if (request.status >= 200 && request.status < 400) {
