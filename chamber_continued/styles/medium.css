@@ -15,16 +15,14 @@
     #hmbrgr-bttn {
         float: right;
         display: block;
-    }
-    nav button {
         background-color: transparent;
         border-radius: 5px;
         color: var(--primary);
         font-size: 4rem;
         border: 0;
     }
-
-    nav button:hover {
+    
+    #hmbrgr-bttn:hover {
         transition: 0.5s;
         background-color: var(--accent1);
         color: var(--secondary);
