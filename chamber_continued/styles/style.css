@@ -206,8 +206,24 @@ main section:nth-child(6) {
     border: solid 1px gray;
     height: auto;
     padding: 10px;
-    
 }
+
+.welcome-bttn, .join-bttn {
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 10px;
+    color: var(--headline-color-on-color);
+    background-color: var(--accent2);
+    text-decoration: none;
+    border: 0;
+}
+
+.welcome-bttn:hover, .join-bttn:hover {
+    transition: 0.5s;
+    background-color: var(--accent1);
+}
+
 /***************************************
 **************** Footer ****************
 ****************************************/

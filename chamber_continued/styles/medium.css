@@ -16,7 +16,7 @@
         float: right;
         display: block;
     }
-    button {
+    nav button {
         background-color: transparent;
         border-radius: 5px;
         color: var(--primary);
@@ -24,7 +24,7 @@
         border: 0;
     }
 
-    button:hover {
+    nav button:hover {
         transition: 0.5s;
         background-color: var(--accent1);
         color: var(--secondary);
