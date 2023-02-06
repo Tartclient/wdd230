@@ -161,7 +161,7 @@ main section {
     height: auto;
 }
 
-main section h2 {
+main section {
     padding: 5%;
     font-size: 16px;
 }
@@ -202,9 +202,9 @@ main section:nth-child(6) {
     
 }
 
-.spotlight h2 {
+.spotlight div {
     border: solid 1px gray;
-    height: 150px;
+    height: auto;
     padding: 10px;
     
 }

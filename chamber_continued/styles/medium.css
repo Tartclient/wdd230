@@ -94,17 +94,17 @@
     }
     
     .spotlight {
+        display: flex;
         flex-flow: row;  
     }
-
-    .spotlight h2:nth-child(3){
-        display: none;
-    }
     
-    .spotlight h2 {
-        width: 100%;
-
+    .spotlight div {
+        width: auto;
         margin: 3px;
+    }
+
+    .spotlight div:nth-child(3){
+        display: none;
     }
     
     main section {
