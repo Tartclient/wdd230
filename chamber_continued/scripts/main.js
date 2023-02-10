@@ -80,7 +80,7 @@ switch (currentDate.getDay()) {
 }
 
 if (dayOfWeek === "Monday" || dayOfWeek === "Tuesday") {
-    message1 = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    message1 = "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
   } else {
     message1 = "";
   }
