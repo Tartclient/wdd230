@@ -26,31 +26,6 @@ hambutton.addEventListener('click', () => {mainNav.classList.toggle('responsive'
 
 // What does toggle mean? Instead of add and remove, toggle means add the class name (the parameter, which in this case is named 'responsive') if it does not currently exist, and remove the 
 
-/*Weather*/
-
-link = "https://api.openweathermap.org/data/2.5/weather?q=seattle&appid=4def50accbd787e425567d862bd5108f";
-var request = new XMLHttpRequest();
-
-request.open('GET', link, true);
-
-request.onload = function () {
-    var obj = JSON.parse(this.response);
-    console.log(obj);
-
-    document.querySelector('#weather').innerHTML = obj.weather[0].description;
-    document.getElementById('location').innerHTML = obj.name;
-    document.getElementById('temp').innerHTML = Math.round(obj.main.temp - 236);
-    document.getElementById('icon').src = "http://openweathermap.org/img/w/" + obj.weather[0].icon + ".png";
-
-    if (request.status >= 200 && request.status < 400) {
-        var temp = obj.main.temp;
-    }
-    else {
-        console.log("The city doesn't exist! Kindly check");
-    }
-}
-request.send();
-
 /*Join Weekday*/
 const currentDate = new Date();
 
@@ -80,7 +55,7 @@ switch (currentDate.getDay()) {
 }
 
 if (dayOfWeek === "Monday" || dayOfWeek === "Tuesday") {
-    message1 = "Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
+    message1 = "Come join us for the chamber meet and greet";
   } else {
     message1 = "";
   }
