@@ -23,6 +23,9 @@
             <h1>Seattle<br>Metropolitan<br>Chamber of<br>Commerce</h1>
         </div>
         <nav>
+            <div class="hmbrgr-menu">
+                <button id="hmbrgr-bttn">&#9776;</button>
+            </div>
             <ul class="mainNav">
                 <li><a href="#">Discover</a></li>
                 <li><a href="#">Directory</a></li>
@@ -30,9 +33,6 @@
                 <li><a href="#">Contact</a></li>  
             </ul>
         </nav>
-        <div class="hmbrgr-menu">
-            <button id="hmbrgr-bttn">&#9776;</button>
-        </div>
         <p><span id="date"></span></p>
     </header>
 
@@ -40,6 +40,11 @@
         <!--1-->
         <section class="welcome">
             <h2>Welcome to Seattle</h2>
+            <picture class="welcome-image">
+                <source srcset="images/wdd230-s.webp" media="(max-width: 714px)">
+                <source srcset="images/wdd230-m.webp" media="(max-width: 1100px)">
+                <img src="images/wdd230-l.webp" alt="wdd230picture">
+            </picture>
             <button class="welcome-bttn"> Join the Chamber </button>
         </section>
         <!--2-->
@@ -61,6 +66,7 @@
                 <h6 id="weather"></h6>
                 <h4><span id="temp"></span><sup>o</sup>f</h4>
                 <img id="icon" src="#" alt="weather image">
+                <p>Windchill is: <span id="windchill"></span></p>
             </div>
         </section>
         <!--5-->

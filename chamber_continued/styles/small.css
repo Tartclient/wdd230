@@ -45,6 +45,17 @@
         font-size: 14px;
     }
 
+    .welcome h2 {
+
+        font-size: 1.8em;
+    }
+
+    .welcome button {
+        left: 20%;
+        right: 20%;
+        transition: .8s;
+    }
+
     .spotlight {
         flex-direction: column;
     }

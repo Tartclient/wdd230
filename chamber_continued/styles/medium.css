@@ -36,11 +36,28 @@
         display: flex;
         align-self: center;
         justify-content: center;
-      
     }
 
     .responsive {
         display: block;
+    }
+    
+    /*sldfkvjspdfkjspkd*/
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    li {
+        padding: 5px;
+        /* background-color: white; */
+    }
+
+    nav ul li {
+        padding: 20px 30px;
     }
   
     /***************************************
@@ -97,6 +114,7 @@
     }
     
     .spotlight div {
+        display: inline;
         width: auto;
         margin: 3px;
     }
