@@ -13,18 +13,15 @@
     }
 
     #hmbrgr-bttn {
-        float: right;
         display: block;
-    }
-    button {
         background-color: transparent;
         border-radius: 5px;
         color: var(--primary);
         font-size: 4rem;
         border: 0;
     }
-
-    button:hover {
+    
+    #hmbrgr-bttn:hover {
         transition: 0.5s;
         background-color: var(--accent1);
         color: var(--secondary);
@@ -38,11 +35,30 @@
         display: flex;
         align-self: center;
         justify-content: center;
-      
     }
 
     .responsive {
         display: block;
+        margin: 0;
+        padding: 0;
+    }
+    
+    /*sldfkvjspdfkjspkd*/
+
+    header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    li {
+        padding: 5px;
+        /* background-color: white; */
+    }
+
+    nav ul li {
+        padding: 20px 30px;
     }
   
     /***************************************
@@ -94,17 +110,18 @@
     }
     
     .spotlight {
+        display: flex;
         flex-flow: row;  
     }
-
-    .spotlight h2:nth-child(3){
-        display: none;
-    }
     
-    .spotlight h2 {
-        width: 100%;
-
+    .spotlight div {
+        display: inline;
+        width: auto;
         margin: 3px;
+    }
+
+    .spotlight div:nth-child(3){
+        display: none;
     }
     
     main section {

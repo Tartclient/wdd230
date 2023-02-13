@@ -7,7 +7,7 @@
     ************ Header section ************
     ****************************************/
     
-    .headerLogo img {
+    .header_logo img {
         max-width: 110px;
         max-height: 110px;
     }
@@ -37,7 +37,7 @@
     }
 
     main section {
-        height: auto;
+        height: 16rem;
     }
     
     main h2{
@@ -45,23 +45,13 @@
         font-size: 14px;
     }
 
-    .welcome h2 {
-
-        font-size: 1.8em;
-    }
-
-    .welcome button {
-        left: 20%;
-        right: 20%;
-        transition: .8s;
-    }
-
     .spotlight {
         flex-direction: column;
     }
 
-    .spotlight div {
+    .spotlight h2 {
         border: solid 1px gray;
+        height: 150px;
     }
     
     main .join{
