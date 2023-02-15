@@ -10,13 +10,14 @@
         padding: 0 50px;
     }
     
-    .hmbrgr .line {
+    .line {
         width: 35px;
         height: 5px;
         background: var(--primary);
         margin: 6px 0;
         border-radius: 5px;
         padding: 0;
+        transition: all 0.4s ease-in-out;
     }
     
     .hmbrgr div:hover {
@@ -52,7 +53,21 @@
 
     .mainNav.responsive {
         opacity: 1;
-        transition: 0.5s;
+        transition: 0.3s;
+    }
+
+    .hmbrgr.responsive .line:nth-child(2)  {
+        transition: 0.2s;
+        opacity: 0;
+    }
+
+    .hmbrgr.responsive .line:nth-child(3)  {
+        transition: 0.4s;
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    .hmbrgr.responsive .line:nth-child(1)  {
+        transition: 0.4s;
+        transform: translateY(11px) rotate(45deg);
     }
 
     /***************************************

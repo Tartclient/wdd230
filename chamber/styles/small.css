@@ -12,6 +12,14 @@
         max-height: 110px;
     }
 
+    .headerLogo h1 {
+        font-size: 20px;
+    }
+
+    .mainNav {
+        top: 200px;
+    }
+
     /***************************************
     ***************** Main *****************
     ****************************************/
@@ -29,20 +37,20 @@
     
     main h2{
         color: var(--main-color);
-        font-size: 14px;
+        font-size: 20px;
     }
 
     .welcome h2 {
         left: 20%;
         right: 20%;
-        font-size: 1.8em;
+        font-size: 20px;
     }
 
     .welcome button {
         left: 20%;
         right: 20%;
         transition: .8s;
-        font-size: 1.4em;
+        font-size: 1em;
     }
 
     .spotlight {

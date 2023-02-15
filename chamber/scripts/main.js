@@ -16,12 +16,15 @@ const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
 datefield.innerHTML = `<em>${fulldate}</em>`;
 
 /* Menu */
-const mainNav = document.querySelector('.mainNav')
+const mainNav = document.querySelector('.mainNav');
 const hambutton = document.querySelector('.hmbrgr');
 
 hambutton.addEventListener('click', () => {
+	
 	mainNav.classList.toggle('responsive')
-}, false);
+	hambutton.classList.toggle('responsive')
+
+});
 
 /* Join Weekday Banner */
 const dayOfWeek = now.getDay();
