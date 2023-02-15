@@ -31,6 +31,11 @@
     --subtitle: 1.8rem;
     --paragraph: 1.2rem;
 }
+* {
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--background-color-page);
@@ -44,81 +49,88 @@ body {
 
 /*Header section*/
 header {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    box-shadow: 0 1px 5px 0px gray;
+    width: 100%;
+    box-shadow: 0 1px 5px 0 gray;
+    padding: 10px;
 }
 
 .banner_msg {
     text-align: center;
     background-color: var(--primary);
     color: var(--headline-color-on-color);
-    margin: 0;
     padding: 10px;
+    margin: 0;
+}
+
+.top-header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px;
+}
+
+.top-header {
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .headerLogo {
     display: flex;
-    grid-column: 1;
-    margin: 20px;
+    align-items: center;
 }
 
 .headerLogo img {
-    padding: 10px;
+    display: inline;
     max-width: 130px;
     max-height: 130px;
     height: auto;
     margin: auto;
 }
 
-header h1 {
+.headerLogo h1 {
+    margin: 0;
+    padding: 0;
     font-size: 25px;
     font-family: var(--heading-font);
 }
 
-nav {
-    align-self: center;
-    justify-content: center;
+.mainNav {
+    margin: 0 25% 0 0;
 }
 
-.mainNav {
+.mainNav ul {
     display: flex;
     font-family: var(--footer-notes);
 }
 
-.mainNav li {
-    display: block; /* change state in small view */
-    flex: 1 1 auto;
-}
-
-.mainNav a {
+.mainNav ul li a {
+    display: block;
     color: var(--nav-link-color);
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
+    padding: 0 30px;
+    transition: 1s;
 }
 
-.mainNav a:hover {
-    transition: 0.2s;
+.mainNav ul li a:hover {
+    font-size: 30px;
+    transition: 0.3s;
     color: var(--nav-hover-link-color);
 }
 
-header button {
+.hmbrgr {
     display: none;
 }
 
 header p {
     display: flex;
-    grid-column: 1 / span 3;
-    grid-row: 2;
     align-self: center;
     justify-content: center;
 
 }
 
 #date {
-    font-family: var(--footer-notes); 
+    font-family: var(--footer-notes);
+    padding: 10px; 
 }
 
 /***************************************

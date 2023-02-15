@@ -4,63 +4,57 @@
     /***************************************
     ************ Header section ************
     ****************************************/
-    header {
-        grid-template-columns: 1fr 2fr 1fr;
-    }
-
-    .hmbrgr-menu {
-        margin: auto;
-    }
-
-    #hmbrgr-bttn {
+    .hmbrgr {
         display: block;
-        background-color: transparent;
+        cursor: pointer;
+        padding: 0 50px;
+    }
+    
+    .hmbrgr .line {
+        width: 35px;
+        height: 5px;
+        background: var(--primary);
+        margin: 6px 0;
         border-radius: 5px;
-        color: var(--primary);
-        font-size: 4rem;
-        border: 0;
-    }
-    
-    #hmbrgr-bttn:hover {
-        transition: 0.5s;
-        background-color: var(--accent1);
-        color: var(--secondary);
-    }
-    
-    .mainNav li {
-        display: none;
-    }
-
-    .responsive li {
-        display: flex;
-        align-self: center;
-        justify-content: center;
-    }
-
-    .responsive {
-        display: block;
-        margin: 0;
         padding: 0;
     }
     
-    /*sldfkvjspdfkjspkd*/
+    .hmbrgr div:hover {
+        transition: 0.2s;
+        background: var(--accent1)   
+    }
+    
+    .mainNav {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--secondary);
+        z-index: +1;
+        overflow: hidden;
+        opacity: 0;
 
-    header {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
 
+    .mainNav ul {
+        display: block;
+        width: fit-content;
+        margin: 25px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
 
-    li {
-        padding: 5px;
-        /* background-color: white; */
     }
 
-    nav ul li {
-        padding: 20px 30px;
+    .mainNav ul li a {
+        padding-bottom: 25px;
     }
-  
+
+    .mainNav.responsive {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
     /***************************************
     ***************** Main *****************
     ****************************************/

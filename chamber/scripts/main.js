@@ -17,9 +17,11 @@ datefield.innerHTML = `<em>${fulldate}</em>`;
 
 /* Menu */
 const mainNav = document.querySelector('.mainNav')
-const hambutton = document.querySelector('#hmbrgr-bttn');
+const hambutton = document.querySelector('.hmbrgr');
 
-hambutton.addEventListener('click', () => {mainNav.classList.toggle('responsive')}, false);
+hambutton.addEventListener('click', () => {
+	mainNav.classList.toggle('responsive')
+}, false);
 
 /* Join Weekday Banner */
 const dayOfWeek = now.getDay();
