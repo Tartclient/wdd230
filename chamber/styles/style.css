@@ -115,6 +115,11 @@ header {
     font-size: 30px;
     transition: 0.3s;
     color: var(--nav-hover-link-color);
+    /*
+    color: var(--headline-color-on-color);
+    background-color: #0084A1;
+    border-radius: 5px;
+    */
 }
 
 .hmbrgr {
