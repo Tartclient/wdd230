@@ -37,3 +37,4 @@ if (dayOfWeek === 1|| dayOfWeek === 2) {
 } else{
 	document.querySelector(".banner").style.display = "none"
 }
+
