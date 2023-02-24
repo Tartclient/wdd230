@@ -23,16 +23,4 @@ request.onload = function () {
 }
 request.send();
 
-/*
-function windChill(temp, speed) {
-
-    if (temperature < 50 && speed > 3) {
-        wchill = 35.74 + (0.6215 * temp) - (35.75 * (speed ** 0.16)) + ((0.4275 * temp) * (speed ** 0.16));
-        console.log(wchill)
-        windChill.innerHTML = wchill.toFixed(0);
-    }
-    else {
-        windChill.innerHTML = "N/A";
-    }
-}
-*/
+/* Wind Chill*/
