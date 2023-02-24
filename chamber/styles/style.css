@@ -50,8 +50,7 @@ body {
 /*Header section*/
 header {
     width: 100%;
-    box-shadow: 0 1px 5px 0 gray;
-    padding: 10px;
+    box-shadow: 0 1px 5px
 }
 
 .banner_msg {
