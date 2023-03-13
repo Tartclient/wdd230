@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&family=Roboto+Mono&family=Roboto:wght@500&display=swap');
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;   
+}
+
+h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+    font-size: 2.3rem;
+}
+
+p, figcaption {
+    font-family: 'lexend', sans-serif;
+}
+
+figure {
+    margin-left: 0;
+}
