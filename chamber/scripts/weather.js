@@ -34,6 +34,9 @@ function displayResults(weatherData) {
     captionDesc.textContent = desc
 }
 
+
+
+
 /*
 link = "https://api.openweathermap.org/data/2.5/weather?q=seattle&appid=4def50accbd787e425567d862bd5108f";
 var request = new XMLHttpRequest();
