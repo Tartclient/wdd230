@@ -292,10 +292,6 @@ main section:nth-child(6) {
     color: #FFFFFF;
 }
 
-.join-bttn {
-    
-}
-
 .welcome-bttn:hover, .join-bttn:hover {
     transition: 0.5s;
     background-color: var(--accent1);
@@ -371,13 +367,17 @@ footer section img {
     max-width: 500px;
     margin: 0 auto;
 }
-  
+
+.contact h2 {
+    text-align: center;
+}
+
 .contact input,
 .contact textarea {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
 }
   
 .contact button {
@@ -392,10 +392,6 @@ footer section img {
 /***************************************
 ************** Join Menu ***************
 ****************************************/
-
-.contact-form {   
-    display: flex;
-}
 
 form {
 /* Center the form on the page */
