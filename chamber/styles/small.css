@@ -103,6 +103,14 @@
         font-size: 12px;
     }
 
+/***************************************
+************** Contact ***************
+****************************************/
+
+    .contact form {
+        font-size: 14px;
+    }
+
 
 
     /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
