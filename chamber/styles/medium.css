@@ -23,8 +23,6 @@
     .hmbrgr:hover .line {
         transition: all 0.4s ease-in-out;
         background-color: var(--accent1);
-
-
     }
     
     .mainNav {
