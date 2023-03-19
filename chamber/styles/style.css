@@ -302,6 +302,16 @@ main section:nth-child(6) {
     text-align: center;
 }
 
+main section img {
+    filter: blur(0em);
+    transition: filter 1s;
+}
+
+main section img[data-src] {
+  filter: blur(0.2em);
+
+}
+
 /***************************************
 **************** Footer ****************
 ****************************************/
@@ -477,7 +487,7 @@ textarea {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
-    
+   
 .weather img {
     /* Add styles for the weather icon */
     width: 80px;
