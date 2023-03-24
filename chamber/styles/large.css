@@ -94,9 +94,6 @@ header {
     font-family: var(--heading-font);
 }
 
-.mainNav {
-    margin: 0 25% 0 0;
-}
 
 .mainNav ul {
     display: flex;
@@ -494,3 +491,52 @@ textarea {
     height: auto;
     margin-bottom: 10px;
 }
+
+
+/***************************************
+**************** Directory ****************
+****************************************/
+.directory {
+    display: grid;
+    margin: 30px;
+    gap: 1rem;
+}
+
+.boxInfo {
+    display: flex;
+    margin: 30px;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.boxInfo {
+    position: relative;
+    padding: 0;
+}
+
+.boxInfo img{
+    display: inline;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+
+.boxInfo h2 {
+    font-size: 2.5em;
+    left: 1.8em;
+    background-color: var(--primary);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.boxInfo p {
+    font-size: 1em;
+    padding: 20px;
+}
+
+/***************************************
+***************** Discover *****************
+****************************************/
