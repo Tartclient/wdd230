@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover|Seattle MetropolitanCofC</title>
+    <title>Discover|Seattle Metropolitan Chamber of Commerce</title>
     <meta name="description" content="the Seattle Metropolitan Chamber of Commerce provides historical information, current graphics, a directory of local businesses.">
     <meta name="author" content="Enrique Arias">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/base.css">
     <!--https://tartclient.github.io/wdd230/-->
 </head>
 <body>
@@ -34,19 +34,18 @@
             </div>
             <nav class="mainNav">
                 <ul>
-                    <ul>
-                        <li><a href="index.html" class="navLink">Home</a></li>
-                        <li><a href="discover.html" class="navLink">Discover</a></li>
-                        <li><a href="directory.html" class="navLink">Directory</a></li>
-                        <li><a href="join.html" class="navLink">Join</a></li>
-                        <li><a href="contact.html" class="navLink">Contact</a></li>  
-                    </ul>
+                    <li><a href="index.html" class="navLink">Home</a></li>
+                    <li><a href="discover.html" class="navLink">Discover</a></li>
+                    <li><a href="directory.html" class="navLink">Directory</a></li>
+                    <li><a href="join.html" class="navLink">Join</a></li>
+                    <li><a href="contact.html" class="navLink">Contact</a></li>  
+                </ul>
             </nav>
         </div>
         <p><span id="date"></span></p>
     </header>
     <main class="discover">
-        <p class='lastVisit'>kk</p>
+        <p id='lastVisited'></p>
         <section class="imageFrame">
             <h2>info</h2>
             <p>One of the oldest public farmers' markets in the United States, Pike Place Market is a bustling hub of fresh produce, artisan crafts, and unique shops.</p>
@@ -115,8 +114,8 @@
             <h4><span id="copyright"></span> Seattle Metropolitan Chamber of Commerce | Enrique Arias | WDD 230 Project | <span id="lastModDate"></span></h4>
         </section>
     </footer>
+    <script src="scripts/lastVisit.js"></script>
     <script src="scripts/main.js"></script>
-    <script src="scripts/weather.js"></script>
 </body>
 </html>
 </html>
