@@ -93,8 +93,9 @@
     }
 
     .soc_media img {
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 50px;
+        max-height: 50px;
+        align-items: center;
     }
 
     .info_bottom {
@@ -104,8 +105,54 @@
     }
 
     /***************************************
-    ************** Contact ***************
+    ************** Discover ****************
     ****************************************/
+
+    .discover {
+        margin: 15px;
+    }
+
+
+    /***************************************
+    *************** Directory **************
+    ****************************************/
+    .directory {
+        display: grid;
+        margin: 30px;
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boxInfo {
+        margin: 30px;
+        gap: 1rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .boxInfo img{
+        display: inline;
+        border-radius: 5px;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+    }
+
+    .boxInfo h2 {
+        font-size: 2.5em;
+        background-color: var(--primary);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .boxInfo p {
+        font-size: 1em;
+        padding: 20px;
+    }
 
 
 

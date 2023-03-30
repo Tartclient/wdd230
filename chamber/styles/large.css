@@ -184,6 +184,18 @@ main section {
     font-size: 16px;
 }
 
+main h2 {
+    font-size: 40px;
+}
+
+main h3 {
+    font-size: 23px;
+}
+
+main p {
+    font-size: 20px;
+}
+
 .welcome {
     grid-column: 2;
     grid-row: 1 / span 2;
@@ -216,10 +228,12 @@ main section {
 }
 
 .spotlight div {
-    border: solid 1px gray;
+    display: flex;
+    border: solid 1px rgb(255, 255, 255);
     height: auto;
-    padding: 10px;
     border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
     margin: 5px;
 }
 
@@ -229,7 +243,16 @@ main section {
     max-width: 230px;
     border-radius: 10px;
     align-content: center;
+}
 
+.spotlight p {
+    padding: 10px;
+    margin: 0;
+}
+
+.spotlight h2, .spotlight h3 {
+    padding: 5px;
+    margin: 10px;
 }
 
 .welcome-bttn, .join-bttn {
@@ -279,7 +302,7 @@ footer {
 }
 
 footer h3 {
-    font-size: 15px;
+    font-size: 20px;
     font-family: var(--heading-font);
 }
 
@@ -291,7 +314,7 @@ footer a img {
 }
 
 footer p {
-    font-size: 15px;
+    font-size: 25px;
     font-family: var(--footer-notes);
 }
 
@@ -307,7 +330,6 @@ footer section img {
 }
 
 .soc_media {
-    display: flex;
     grid-column: 4;
     grid-row: 1;
     align-items: center;
@@ -327,7 +349,44 @@ footer section img {
 /***************************************
 ************** Join Menu ***************
 ****************************************/
+.join-grid {
+    display: flex;
+    flex-direction: column;
 
+}
+
+.join-grid form {
+    width: 100%;
+}
+
+.join-grid form {
+    display: grid;
+    grid-gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.join-grid h2, .join-grid div {
+    text-align: center;
+    padding: 10px;
+}
+
+.join-grid input,
+.join-grid textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+  
+.join-grid button {
+    background-color: var(--accent2);
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 form {
 /* Center the form on the page */
     margin: 0 auto;
@@ -339,56 +398,41 @@ form {
     border-radius: 1em;
     color: #FFFFFF;
 }
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+table {
+    border-collapse: collapse;
 }
-li {
-    list-style: none; 
+
+
+th, 
+td {
+    padding: 10px 20px;
+    border: 5px solid #e2e2e2;
 }
-form li + li {
-    margin-top: 1em;
-}  
-label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}  
-input,
-textarea {
-    /* To make sure that all text fields have the same font settings
-        By default, textareas have a monospace font */
-    font: 1em sans-serif;
-      
-    /* Uniform text field size */
-    width: 300px;
-    box-sizing: border-box;
-      
-    /* Match form field borders */
-    border: 1px solid #999;
-}  
-input:focus,
-textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
+
+td {
+    text-align: center;
 }
-      
-textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-      
-    /* Provide space to type some text */
-    height: 5em;
-}  
-.bttn {
-    /* Align buttons with the text fields */
-    display: flex;
-    align-items: center;
-    justify-content: center;  
-    padding-top: 20px;     
-}  
+
+tr:nth-child(1) td {
+    background-color: black;
+    color: white;
+    font-size: 28px;
+    
+}
+
+tr:nth-child(2) td {
+    background-color: gray;
+    color: white;
+}
+
+tr:nth-child(4) {
+    background-color: #f3f3f3;
+}
+
+tr:nth-child(n+3) td:nth-child(n+1) {
+    color: black;
+}
 
 /***************************************
 ************** Contact ***************
