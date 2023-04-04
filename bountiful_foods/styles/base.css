@@ -192,13 +192,13 @@ h2 {
 }
 
 .weather h2, .specialty-drinks h2, .info h2 {
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 .weather, 
 .specialty-drinks, 
 .info {
-    background-color: var(--accent2);
+    background-color:#f0eeee;
     color: black;
 }
 /*
@@ -219,19 +219,19 @@ h2 {
 .productBox {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    gap: 1rem;
     
 }
 
 
 .product img {
-    display: block;
-    max-height: 150px;
-    max-width: 150px;
-    
+    display: inline;
+    width:  180px;
+    height: 180px;
+    object-fit: cover;
 
 }
 
@@ -240,17 +240,44 @@ h2 {
     text-align: center;
 }
 
-.productBox div:nth-child(3) {
+.productBox div:nth-child(3), 
+.productBox div:nth-child(4){
     display: none;
 }
-
+/*
 .product button {
     border-radius: 20px;
-    padding: 5px 15px;
-    color: var(--secondary);
+    padding: 10px 20px;
     background-color: var(--accent1);
     border: none;
 }
+
+.product button a {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary);
+}
+
+.product button:hover {
+    background-color: var(--accent2);
+    transition: 0.5s;
+    color: var(--accent1);
+}
+*/
+.tryBttn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: var(--accent1);
+    border: none;
+    color: var(--secondary);
+    font-family: 'Roboto', sans-serif;
+}
+
+.tryBttn:hover {
+    background-color: var(--accent2);
+    transition: 0.5s;
+    color: var(--accent1);
+}
+
 
 /***************************************
 *************** Footer *****************
@@ -284,6 +311,49 @@ footer div img {
 /***************************************
 *************** weather ****************
 ****************************************/
+.weather-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+}
+
+.current-weather {
+  margin-bottom: 20px;
+}
+
+.weather-details {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.weather-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url(images/weather-icon.png);
+  background-size: contain;
+}
+
+.weather-summary {
+  margin-left: 10px;
+}
+
+.forecast {
+  margin-top: 20px;
+}
+
+.forecast-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.forecast-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
 
 /***************************************
 ************** Fresh Page ***************

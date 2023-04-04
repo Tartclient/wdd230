@@ -18,3 +18,15 @@ hambutton.addEventListener('click', () => {
 	hambutton.classList.toggle('responsive')
 
 });
+
+/* CleanerView Button */
+const tryButtons = document.querySelectorAll('.tryBttn');
+
+// Add a click event listener to each button
+tryButtons.forEach(button => {
+  button.addEventListener('click', function() {
+
+    window.location.href = "fresh.html";
+	
+  });
+});

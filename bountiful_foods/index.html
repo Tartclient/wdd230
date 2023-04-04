@@ -46,8 +46,38 @@
 		</section>
 		<section class="weather">
 			<!-- Use JavaScript to display weather information from the OpenWeatherMap API here -->
-            <h2>weather</h2>
-            <div></div>
+            <h2>Weather</h2>
+            <div class="weather-card">
+                <div class="current-weather">
+                  <h2>Current Weather in Carlsbad</h2>
+                  <div class="weather-details">
+                    <div class="weather-icon"></div>
+                    <div class="weather-summary">
+                      <p class="temperature"></p>
+                      <p class="description"></p>
+                      <p class="humidity"></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="forecast">
+                  <h3>3 Day Forecast</h3>
+                  <ul class="forecast-list">
+                    <li>
+                      <p class="forecast-day"></p>
+                      <p class="forecast-temperature"></p>
+                    </li>
+                    <li>
+                      <p class="forecast-day"></p>
+                      <p class="forecast-temperature"></p>
+                    </li>
+                    <li>
+                      <p class="forecast-day"></p>
+                      <p class="forecast-temperature"></p>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+                         
 		</section>
 		<section class="specialty-drinks">
 			<!-- Use JavaScript to display the number of specialty drinks the user has ordered here -->
@@ -55,18 +85,23 @@
             <div class="productBox">
                 <div class="product">
                     <img src="images/orange.webp" loading="lazy" alt="Drink">
-                    <p>info</p>
-                    <button>more</button>
+                    <p>Try our new Orange flavor</p>
+                    <button class="tryBttn">Try Now</button>
                 </div>
                 <div class="product">
-                    <img src="images/cherry.webp" loading="lazy" alt="Drink">
-                    <p>info</p>
-                    <button>more</button>
+                    <img src="images/cherry.webp" loading="lazy" alt="Cherry Drink">
+                    <p>Try our new cherry flavor</p>
+                    <button class="tryBttn">Try Now</button>
                 </div>
                 <div class="product">
-                    <img src="images/pineapple.webp" loading="lazy" alt="Drink">
-                    <p>info</p>
-                    <button>more</button>
+                    <img src="images/pineapple.webp" loading="lazy" alt="Pineapple Drink">
+                    <p>Try our new pineapple flavor</p>
+                    <button class="tryBttn">Try Now</button>
+                </div>
+                <div class="product">
+                    <img src="images/avocado.webp" loading="lazy" alt="Drink">
+                    <p>Try our new Avocado flavor</p>
+                    <button class="tryBttn">Try Now</button>
                 </div>
             </div>
 		</section>
@@ -82,7 +117,6 @@
                 </ul>
             </div>
 		</section>
-
     </main>
     <footer>
         <h2>Contact Us</h2>
@@ -98,6 +132,10 @@
                 <img src="images/facebook.png" alt="facebook"></a>
             <a href="https://www.linkedin.com/">
                 <img src="images/Linkedin.png" alt="linkedin"></a>
+            <a href="https://www.pinterest.com/">
+                <img src="images/pinterest.png" alt="pinterest"></a>
+            <a href="https://twitter.com/">
+                <img src="images/twitter.png" alt="Twitter"></a>
         </section>
         <section class="info_bottom">
             <h4><span id="copyright"></span> Bountiful Foods | Enrique Arias | WDD 230 Project | <span id="lastModDate"></span></h4>
