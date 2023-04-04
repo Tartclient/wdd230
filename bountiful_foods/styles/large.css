@@ -1,18 +1,81 @@
 /*Large view*/
-@media only screen and (min-width: 70em) {
+@media only screen and (min-width: 90em) {
+    :root {  
+        /*Font size*/
+        --headline: 4rem;
+        --subtitle: 2.5rem;
+        --nav: 2rem;
+        --paragraph: 1.5rem;
+        --clickable: 1rem;
+    }
 
+    body {
+        max-width: 80%; /* Adjust this percentage to control the width of the content */
+        margin-left: auto;
+        margin-right: auto;
+    }
     /***************************************
     *************** Header *****************
     ****************************************/
+    header img {
+        padding: 10px;
+        margin: 0 15px;
+        max-width: 220px;
+        max-height: 220px;
+    }
 
+    .hmbrgr {
+        display: none;
+    }
 
+    .mainNav {
+        position: static;
+        height: auto;
+        opacity: 1;
+    }
+
+    .mainNav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+
+    }
+
+    .mainNav ul li {
+        padding: 0;
+    }
+
+    .mainNav ul li a {
+        padding: 0 50px;
+    }
     /***************************************
     **************** Main ******************
     ****************************************/
+    main h2 {
+        font-size: var(--subtitle); 
+    }
+
+    .welcomeBox h1 {
+        font-size: var(--headline);
+    }
+    
+    .welcomeBox p {
+        font-size: var(--paragraph); 
+    }
+
+    .product p, 
+    .info li {
+        font-size: var(--paragraph); 
+    }
+    
+    .tryBttn {
+        font-size: var(--clickable);
+    }
 
     .productBox div:nth-child(4) {
         display: inline;
     }
+    
     /***************************************
     *************** Footer *****************
     ****************************************/
@@ -21,6 +84,43 @@
     /***************************************
     *************** weather ****************
     ****************************************/
+    .weather-card {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+
+    .current-weather {
+        text-align: center;
+        margin-bottom: 0;
+        grid-column: 1 / span 1;
+        grid-row: 1;
+    }
+
+    .weather-details {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 0;
+        background-color: var(--accent2);
+        border-radius: 20px;
+        color: var(--secondary);
+        padding: 15px;
+    }
+
+    .forecast {
+        margin-top: 0;
+        display: block;
+        grid-column: 2 / span 2;
+        grid-row: 1;
+    }
+
+    .forecast h3 {
+        font-size: var(--headline); 
+
+        padding: 10px 25px;
+    }
+
 
     /***************************************
     ************** Fresh Page ***************

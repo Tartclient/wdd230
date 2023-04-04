@@ -3,7 +3,7 @@
 :root {  
     /* colors */
     --primary: #5EA700;
-    --secondary: #F5F5F5;
+    --secondary: white;
     --accent1: #014E36;
     --accent2: #C5DF64;
     /*Font Colors*/
@@ -14,10 +14,12 @@
   
     /*Background colors*/
     --background-color-title: black;
-    --background-color-page:white;
+    --background-color: #f8f7f5;
+    
     /*Font size*/
     --headline: 2.8rem;
     --subtitle: 1.8rem;
+    --nav: 2rem;
     --paragraph: 1rem;
     --clickable: .9rem;
 }
@@ -41,29 +43,16 @@ header {
     width: 100%;
     padding: 15px;
     background-color: var(--primary);
-    
-}
-
-header img {
-    padding: 10px;
-    max-width: 180px;
-    max-height: 180px;
-}
-
-header{
     display: flex;
     align-items: center; 
     justify-content: space-between; 
     padding: 10px;
 }
 
-.mainNav ul {
-    display: block;
-    margin: 0 auto 0 auto;
-    text-align: center;
-    font-size: 25px;
-    font-family: var(--clickable-font);
-
+header img {
+    padding: 10px;
+    max-width: 180px;
+    max-height: 180px;
 }
 
 .mainNav ul li a {
@@ -115,12 +104,18 @@ header{
     text-align: center;
     transition: 0.5s;
     padding: 30px 0;
-    font-size: 20px;
+    font-size: var(--nav);
+    font-family: var(--clickable-font);
 
 }
 
 .mainNav ul li a {
     padding-bottom: 25px;
+}
+
+.mainNav ul li a:hover {
+    text-decoration: underline;
+    color: var(--accent2);
 }
 
 .mainNav.responsive {
@@ -156,7 +151,7 @@ main {
 
 }
 
-h2 {
+main h2 {
     font-family: var(--subttitle-font);
     font-size: var(--subtitle); 
 }
@@ -173,6 +168,12 @@ h2 {
     max-width: 100%;
 }
 
+.weather, 
+.specialty-drinks, 
+.info {
+    background-color:var(--background-color);
+    color: black;
+}
 .welcomeBox {
     margin-top: -80px;
     background-color: white;
@@ -192,29 +193,8 @@ h2 {
 }
 
 .weather h2, .specialty-drinks h2, .info h2 {
-    padding-left: 15px;
+    padding: 10px 25px;
 }
-
-.weather, 
-.specialty-drinks, 
-.info {
-    background-color:#f0eeee;
-    color: black;
-}
-/*
-
-.weather {
-
-}
-
-.specialty-drinks {
-
-}
-
-.info {
-
-}
-*/
 
 .productBox {
     display: flex;
@@ -226,43 +206,24 @@ h2 {
     
 }
 
-
-.product img {
-    display: inline;
-    width:  180px;
-    height: 180px;
-    object-fit: cover;
-
-}
-
 .product {
     padding: 15px;
     text-align: center;
+}
+
+.product img {
+    display: inline;
+    width:  120px;
+    height: 120px;
+    object-fit: cover;
+
 }
 
 .productBox div:nth-child(3), 
 .productBox div:nth-child(4){
     display: none;
 }
-/*
-.product button {
-    border-radius: 20px;
-    padding: 10px 20px;
-    background-color: var(--accent1);
-    border: none;
-}
 
-.product button a {
-    font-family: 'Roboto', sans-serif;
-    color: var(--secondary);
-}
-
-.product button:hover {
-    background-color: var(--accent2);
-    transition: 0.5s;
-    color: var(--accent1);
-}
-*/
 .tryBttn {
     border-radius: 20px;
     padding: 10px 20px;
@@ -285,11 +246,8 @@ h2 {
 footer {
     display: flex;
     flex-direction: column;
-    background-color: var(--primary);
-    align-items: center;
-    color: var(--secondary);
-    padding: 25px;
     text-align: center;
+    background-color: var(--primary);
 }
 
 footer div img {
@@ -308,52 +266,60 @@ footer div img {
     max-height: 60px;
 }
 
+.infoTop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--secondary);
+    padding: 25px;
+}
+
+.infoBottom {
+    background-color: var(--accent1);
+    color: var(--secondary);
+    padding: 15px; 
+}
+
 /***************************************
 *************** weather ****************
 ****************************************/
+
+
 .weather-card {
-  border: 1px solid #ccc;
-  padding: 10px;
-  width: 300px;
+    border: 10px solid var(--accent2);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    width: auto;
 }
 
 .current-weather {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+
 }
 
 .weather-details {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: var(--accent2);
+    border-radius: 20px;
+    color: var(--secondary);
+    padding: 15px;
+
 }
 
 .weather-icon {
-  width: 60px;
-  height: 60px;
-  background-image: url(images/weather-icon.png);
-  background-size: contain;
-}
-
-.weather-summary {
-  margin-left: 10px;
+    width: 80px;
+    height: 80px;
+    background-size: contain;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .forecast {
-  margin-top: 20px;
+    display: none;
 }
-
-.forecast-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.forecast-list li {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
 
 /***************************************
 ************** Fresh Page ***************

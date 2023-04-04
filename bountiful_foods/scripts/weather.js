@@ -1,38 +1,74 @@
-// Replace YOUR_API_KEY with your actual API key
 const apiKey = '4def50accbd787e425567d862bd5108f';
 
 const weatherCard = document.querySelector('.weather-card');
 
-// Replace CARLSBAD_LATITUDE and CARLSBAD_LONGITUDE with the latitude and longitude of Carlsbad
-const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=CARLSBAD_LATITUDE&lon=CARLSBAD_LONGITUDE&exclude=minutely,hourly&units=imperial&appid=${apiKey}`;
+const currentWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Carlsbad&appid=${apiKey}&units=imperial`;
+const forecastWeatherUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Carlsbad&appid=${apiKey}&units=imperial`;
 
-// Get the elements to display the weather data
 const temperature = weatherCard.querySelector('.temperature');
 const description = weatherCard.querySelector('.description');
 const humidity = weatherCard.querySelector('.humidity');
 const weatherIcon = weatherCard.querySelector('.weather-icon');
 const forecastDays = weatherCard.querySelectorAll('.forecast-day');
 const forecastTemperatures = weatherCard.querySelectorAll('.forecast-temperature');
+const forecastIcons = weatherCard.querySelectorAll('.forecast-icon');
 
-// Make a GET request to the OpenWeatherMap API
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
 
-    // Get the current weather data
-    const currentWeather = data.list[0];
-    const currentTemperature = currentWeather.main.temp.toFixed(0);
-    const currentDescription = currentWeather.weather[0].description;
-    const currentHumidity = currentWeather.main.humidity;
-    const currentWeatherIcon = `http://openweathermap.org/img/w/${currentWeather.weather[0].icon}.png`;
+async function fetchWeatherData() {
+  try {
+    const [currentWeatherResponse, forecastWeatherResponse] = await Promise.all([
+      fetch(currentWeatherUrl),
+      fetch(forecastWeatherUrl)
+    ]);
 
-    // Set the current weather data in the HTML elements
-    temperature.textContent = `${currentTemperature}ºF`;
-    description.textContent = currentDescription;
-    humidity.textContent = `Humidity: ${currentHumidity}%`;
-    weatherIcon.style.backgroundImage = `url(${currentWeatherIcon})`;
+    const currentWeatherData = await currentWeatherResponse.json();
+    const forecastWeatherData = await forecastWeatherResponse.json();
 
-    // Get the forecast weather data
-    const forecastData = data.list.slice(1, 4);
+    displayWeatherData(currentWeatherData, forecastWeatherData);
+  } catch (error) {
+    console.error("Error fetching weather data:", error);
+  }
+}
 
-    // Set the forecast weather data
+function displayWeatherData(currentWeatherData, forecastWeatherData) {
+  // Process and display the current weather data
+  const currentTemperature = currentWeatherData.main.temp.toFixed(0);
+  const currentDescription = currentWeatherData.weather[0].description;
+  const currentHumidity = currentWeatherData.main.humidity;
+  const currentWeatherIcon = `http://openweathermap.org/img/w/${currentWeatherData.weather[0].icon}.png`;
+
+  temperature.textContent = `${currentTemperature}ºF`;
+  description.textContent = currentDescription;
+  humidity.textContent = `Humidity: ${currentHumidity}%`;
+  weatherIcon.style.backgroundImage = `url(${currentWeatherIcon})`;
+
+  // Process and display the forecast weather data
+  const forecastByDate = {};
+
+  forecastWeatherData.list.forEach(forecast => {
+    const date = new Date(forecast.dt * 1000).toLocaleDateString();
+    if (!forecastByDate[date]) {
+      forecastByDate[date] = [];
+    }
+    forecastByDate[date].push(forecast);
+  });
+
+  const dailyForecasts = Object.values(forecastByDate).slice(1, 4);
+
+  for (let i = 0; i < dailyForecasts.length; i++) {
+    const maxTempForecast = dailyForecasts[i].reduce((maxTemp, forecast) => {
+      return forecast.main.temp > maxTemp.main.temp ? forecast : maxTemp;
+    });
+  
+    const forecastTemperature = maxTempForecast.main.temp.toFixed(0);
+    const forecastDate = new Date(maxTempForecast.dt * 1000);
+    const forecastIconUrl = `http://openweathermap.org/img/w/${maxTempForecast.weather[0].icon}.png`;
+  
+    forecastDays[i].textContent = forecastDate.toLocaleDateString('en-US', { weekday: 'long' });
+    forecastTemperatures[i].textContent = `${forecastTemperature}ºF`;
+    forecastIcons[i].style.backgroundImage = `url(${forecastIconUrl})`;
+  }  
+}
+
+
+fetchWeatherData();
