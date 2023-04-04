@@ -129,5 +129,35 @@
     /***************************************
     ************ About Us Page *************
     ****************************************/
+    .aboutInfo {
+        background-color: var(--background-color);
+        align-content: center;
+        justify-content: center;
+        padding: 0;
+    
+    }
+    .aboutInfo h1 {
+        font-size: var(--headline);
+        font-family: var(--headline);
+        padding: 0 40px;
+    
+    }
+    
+    .aboutInfo p {
+        font-size: var(--subtitle);
+        font-family: var(--clickable-font);
+        padding: 0 40px 0 40px;
+        line-height: 1.5;
+    
+    }
+    
+    .infoBox {
+        padding: 40px;
+    }
+    
+    .infoBox p {
+        line-height: 1.8;
+        font-size: var(--paragraph);
+    }
     
 }

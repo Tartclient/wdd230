@@ -3,7 +3,7 @@
 :root {  
     /* colors */
     --primary: #5EA700;
-    --secondary: white;
+    --secondary: #f2f2f2;
     --accent1: #014E36;
     --accent2: #C5DF64;
     /*Font Colors*/
@@ -14,7 +14,7 @@
   
     /*Background colors*/
     --background-color-title: black;
-    --background-color: #f8f7f5;
+    --background-color: white;
     
     /*Font size*/
     --headline: 2.8rem;
@@ -31,7 +31,7 @@
 }
 
 body {
-    background-color: var(--secondary);
+    background-color: var(--background-color);
     color: #000;
     font-family: var(--paragraph-font);
 }
@@ -171,12 +171,12 @@ main h2 {
 .weather, 
 .specialty-drinks, 
 .info {
-    background-color:var(--background-color);
+    background-color:var(--secondary);
     color: black;
 }
 .welcomeBox {
     margin-top: -80px;
-    background-color: white;
+    background-color: var(--background-color);
     padding: 10px; /* Adjust this as needed */
     box-sizing: border-box;
     text-align: center;
@@ -324,11 +324,146 @@ footer div img {
 /***************************************
 ************** Fresh Page ***************
 ****************************************/
+/* Form container */
+.fresh-form {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+/* Image container */
+.boxImg img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Fieldset and legend */
+fieldset {
+    border: none;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+
+/* Headings */
+.fresh-form h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+/* Input boxes */
+.inputBox {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.inputBox input,
+.inputBox select,
+.inputBox textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputBox textarea {
+    resize: vertical;
+}
+
+/* Fruit Selection info */
+.fresh-form p {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+/* Submit button */
+.submit-button {
+    background-color: var(--accent1);
+    color: #fff;
+    font-size: var(--clickable);
+    font-family: var(--clickable-font);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);
+}
+
+/* Form info */
+.form-info {
+    background-color: #f2f2f2;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.form-info p {
+    font-size: var(--paragraph);
+    font-family: var(--paragraph-font);
+    padding-bottom: 20px;
+}
+
+.form-info button {
+    background-color: var(--accent1);
+    color: #fff;
+    font-size: var(--clickable);
+    font-family: var(--clickable-font);
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.form-info button:hover {
+    background-color: var(--accent2);
+    color: var(--accent1);
+    }
 
 /***************************************
 ************ About Us Page *************
 ****************************************/
+.aboutInfo {
+    background-color: var(--secondary);
+    align-content: center;
+    justify-content: center;
 
+}
+.aboutInfo h1 {
+    font-size: var(--headline);
+    font-family: var(--headline);
+    padding: 0 40px;
+
+}
+
+.aboutInfo p {
+    font-size: var(--subtitle);
+    font-family: var(--clickable-font);
+    padding: 0 40px 0 40px;
+    line-height: 1.5;
+
+}
+
+.infoBox {
+    padding: 40px;
+}
+
+.infoBox p {
+    line-height: 1.8;
+    font-size: var(--paragraph);
+}
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
