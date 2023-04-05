@@ -79,6 +79,21 @@
     /***************************************
     *************** Footer *****************
     ****************************************/
+    .soc_media {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .soc_media a {
+        padding: 0 15px;
+    }
+
+    .soc_media a img {
+        max-width: 80px;
+        max-height: 80px;
+    }
 
 
     /***************************************
@@ -102,10 +117,10 @@
         align-items: center;
         flex-direction: column;
         margin-top: 0;
-        background-color: var(--accent2);
-        border-radius: 20px;
-        color: var(--secondary);
-        padding: 15px;
+    }
+
+    .weather-details {
+        margin-top: 75px;
     }
 
     .forecast {
@@ -117,8 +132,11 @@
 
     .forecast h3 {
         font-size: var(--headline); 
-
         padding: 10px 25px;
+    }
+
+    .forecast-list li {
+        margin: 14px 0;
     }
 
 
@@ -138,25 +156,15 @@
     }
     .aboutInfo h1 {
         font-size: var(--headline);
-        font-family: var(--headline);
         padding: 0 40px;
     
     }
     
     .aboutInfo p {
         font-size: var(--subtitle);
-        font-family: var(--clickable-font);
-        padding: 0 40px 0 40px;
-        line-height: 1.5;
-    
-    }
-    
-    .infoBox {
-        padding: 40px;
     }
     
     .infoBox p {
-        line-height: 1.8;
         font-size: var(--paragraph);
     }
     

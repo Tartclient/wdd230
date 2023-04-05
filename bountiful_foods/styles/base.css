@@ -180,6 +180,7 @@ main h2 {
     padding: 10px; /* Adjust this as needed */
     box-sizing: border-box;
     text-align: center;
+    
 }
 
 .welcomeBox h1 {
@@ -291,6 +292,7 @@ footer div img {
     padding: 15px;
     margin: 20px;
     width: auto;
+    color: var(--accent1);
 }
 
 .current-weather {
@@ -303,9 +305,7 @@ footer div img {
     margin-top: 10px;
     background-color: var(--accent2);
     border-radius: 20px;
-    color: var(--secondary);
     padding: 15px;
-
 }
 
 .weather-icon {
@@ -318,7 +318,12 @@ footer div img {
 }
 
 .forecast {
+
     display: none;
+}
+
+.forecast p {
+    color: var(--accent1);
 }
 
 /***************************************
@@ -443,7 +448,7 @@ legend {
 }
 .aboutInfo h1 {
     font-size: var(--headline);
-    font-family: var(--headline);
+    font-family: var(--heading-font);
     padding: 0 40px;
 
 }
@@ -453,7 +458,6 @@ legend {
     font-family: var(--clickable-font);
     padding: 0 40px 0 40px;
     line-height: 1.5;
-
 }
 
 .infoBox {
