@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join|Seattle MetropolitanCofC</title>
+    <title>Join|Seattle Metropolitan Chamber of Commerce </title>
     <meta name="description" content="the Seattle Metropolitan Chamber of Commerce provides local businesses with information and resources so that they can prosper and grow. The site includes historical information, current graphics, a directory of local businesses, a way to become a member, and contact information.">
     <meta name="author" content="Enrique Arias">
     <link rel="icon" href="favicon.ico">
@@ -47,101 +47,104 @@
 
     <main class="join-grid">
         <h2>Join Us</h2>
-        <div >
-            <h2>Your Information</h2>
-            <form onsubmit="handleSubmit(event)">
-                <label for="firstName">First Name:</label>
-                <input type="text" name="fname" placeholder="First Name*" required>
-                <label for="lastName">Last Name:</label>
-                <input type="text" name="lname" placeholder="Last Name*" required>
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="example@company.com*" required>
-                <label for="phoneNumber">PhoneNumber*:</label>
-                <input type="tel" name="pnumber" placeholder="2532278462" required>
-                <label for="businessPos">Business Position:</label>
-                <input type="text" name="position" placeholder="Phone Number*">
-                <label for="businessName">Business Name*:</label>
-                <input type="text" name="bname" placeholder="example@company.com*" required>
-                <!--
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-                -->
-            </form>
+        <form action="thankyou.html" method="get">
 
-        </div>
-        <div>
-            <h2>Membership Selection</h2>
-            <div class="table-container">
-                <table>
-                    <tr>
-                        <td colspan="5">Membership Levels</td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td>NP</td>
-                        <td>Bronze</td>
-                        <td>Silver</td>
-                        <td>Gold</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Levels">Discounts</td>
-                        <td data-label="NP">✔️</td>
-                        <td data-label="Bronze">✔️</td>
-                        <td data-label="Silver">✔️</td>
-                        <td data-label="Gold">✔️</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Levels">Listing in Website</td>
-                        <td data-label="NP">❌</td>
-                        <td data-label="Bronze">✔️</td>
-                        <td data-label="Silver">✔️</td>
-                        <td data-label="Gold">✔️</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Levels">Advertising</td>
-                        <td data-label="NP">❌</td>
-                        <td data-label="Bronze">❌</td>
-                        <td data-label="Silver">✔️</td>
-                        <td data-label="Gold">✔️</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Levels">Exclusive Events</td>
-                        <td data-label="NP">❌</td>
-                        <td data-label="Bronze">❌</td>
-                        <td data-label="Silver">❌</td>
-                        <td data-label="Gold">✔️</td>
-                    </tr>
-                    <tr>
-                        <td data-label="Levels">Price</td>
-                        <td data-label="NP">$0</td>
-                        <td data-label="Bronze">$100</td>
-                        <td data-label="Silver">$250</td>
-                        <td data-label="Gold">$450</td>
-                    </tr>
-                </table>
+            <div >
+                <h2>Your Information</h2>
+                <fieldset>
+                    <label for="firstName">First Name*:</label>
+                    <input type="text" name="fname" placeholder="First Name" required>
+                    <label for="lastName">Last Name*:</label>
+                    <input type="text" name="lname" placeholder="Last Name" required>
+                    <label for="email">Email*:</label>
+                    <input type="email" name="email" placeholder="example@company.com" required>
+                    <label for="phoneNumber">Phone Number*:</label>
+                    <input type="tel" name="pnumber" placeholder="(253) 227-8462" required>
+                    <label for="businessPos">Business Position:</label>
+                    <input type="text" name="position" placeholder="CEO of McDonald's">
+                    <label for="businessName">Business Name*:</label>
+                    <input type="text" name="bname" placeholder="example@company.com*" required>
+                    <!--
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    -->
+                </fieldset>
+    
             </div>
-            <p>NP Membership is for non profit organizations and there is no fee</p>
-            <p>Select the Membership level</p>
-            <label class="inputBox">
-                <select name="subject" class="level-option">
-                  <option value="">level</option>
-                  <option value="NP">Non Profit</option>
-                  <option value="Bronze">Bronze</option>
-                  <option value="Silver">Silver</option>
-                  <option value="Gold">Gold</option>
-                </select>
-            </label>
-              
-        </div>
-        <div >
-            <h2>About Your Business</h2>
-            <form onsubmit="handleSubmit(event)">
-                <label for="B">Share a brief description of your business and why you would like to join the Chamber of Commerce.</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Apply</button>
-            </form>
-            <div id="submit-message"></div>
-        </div>
+            <div>
+                <h2>Membership Selection</h2>
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <td colspan="5">Membership Levels</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>NP</td>
+                            <td>Bronze</td>
+                            <td>Silver</td>
+                            <td>Gold</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Levels">Discounts</td>
+                            <td data-label="NP">✔️</td>
+                            <td data-label="Bronze">✔️</td>
+                            <td data-label="Silver">✔️</td>
+                            <td data-label="Gold">✔️</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Levels">Listing in Website</td>
+                            <td data-label="NP">❌</td>
+                            <td data-label="Bronze">✔️</td>
+                            <td data-label="Silver">✔️</td>
+                            <td data-label="Gold">✔️</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Levels">Advertising</td>
+                            <td data-label="NP">❌</td>
+                            <td data-label="Bronze">❌</td>
+                            <td data-label="Silver">✔️</td>
+                            <td data-label="Gold">✔️</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Levels">Exclusive Events</td>
+                            <td data-label="NP">❌</td>
+                            <td data-label="Bronze">❌</td>
+                            <td data-label="Silver">❌</td>
+                            <td data-label="Gold">✔️</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Levels">Price</td>
+                            <td data-label="NP">$0</td>
+                            <td data-label="Bronze">$100</td>
+                            <td data-label="Silver">$250</td>
+                            <td data-label="Gold">$450</td>
+                        </tr>
+                    </table>
+                </div>
+                <p>NP Membership is for non profit organizations and there is no fee</p>
+                <p>Select the Membership level</p>
+                <label class="inputBox">
+                    <select name="subject" class="level-option">
+                      <option value="">level</option>
+                      <option value="NP">Non Profit</option>
+                      <option value="Bronze">Bronze</option>
+                      <option value="Silver">Silver</option>
+                      <option value="Gold">Gold</option>
+                    </select>
+                </label>
+                  
+            </div>
+            <div >
+                <h2>About Your Business</h2>
+                <fieldset>
+                    <label for="B">Share a brief description of your business and why you would like to join the Chamber of Commerce.</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Apply</button>
+                </fieldset>
+                <div id="submit-message"></div>
+            </div>
+        </form>
         <!--1
         <div class="contact-form">
         <form action="/my-handling-form-page" method="post">

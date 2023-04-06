@@ -467,7 +467,12 @@ tr:nth-child(n+3) td:nth-child(n+1) {
   }
 }
 
-
+.thankyou {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 300px 0;
+}
 
 /***************************************
 ************** Contact ***************
