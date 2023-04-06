@@ -1,7 +1,7 @@
 /*Weather*/
 const currentTemp = document.querySelector('#current-temp')
 const weatherIcon = document.querySelector('#weather-icon')
-const captionDesc = document.querySelector('figcaption')
+const captionDesc = document.querySelector('#weather-caption')
 const windSpeed = document.querySelector('#wind-speed');
 const windChill = document.querySelector('#wind-chill');
 

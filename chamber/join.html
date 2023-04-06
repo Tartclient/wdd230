@@ -50,14 +50,22 @@
         <div >
             <h2>Your Information</h2>
             <form onsubmit="handleSubmit(event)">
-                <label for="firstName">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="lastName">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="name" name="fname" placeholder="First Name*" required>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="name" name="lname" placeholder="Last Name*" required>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
+                <input type="text" id="email" name="email" placeholder="example@company.com*" required>
+                <label for="phoneNumber">PhoneNumber*:</label>
+                <input type="int" id="phone-number" name="pnumber" placeholder="2532278462" required>
+                <label for="businessPos">Business Position:</label>
+                <input type="text" id="position" name="position" placeholder="Phone Number*">
+                <label for="businessName">Business Name*:</label>
+                <input type="text" id="bussines-name" name="bnumber" placeholder="example@company.com*" required>
+                <!--
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                -->
             </form>
 
         </div>
@@ -66,7 +74,7 @@
             <div>
                 <table>
                     <tr>
-                        <td colspan="4">ACME Wildwest Services </td>
+                        <td colspan="5">Membership Levels</td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
@@ -105,6 +113,12 @@
                     </tr>
                 </table>
             </div>
+            <p>Select the Membership level</p>
+            <label class="inputBox">
+                <select name="subject" class="fruit-choice-1 fruitSelection">
+                    <option value="">level</option>
+                </select>
+            </label>
         </div>
         <div >
             <h2>About Your Business</h2>
@@ -171,6 +185,6 @@
         </section>
     </footer>
     <script src="scripts/main.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/join.js"></script>
 </body>
 </html>

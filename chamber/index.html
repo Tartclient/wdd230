@@ -65,14 +65,15 @@
         <!--3-->
         <section class="join">
             <p>Learn more about joining the Chamber of Commerce and how it can benefit your business.</p>
+            <!--Causing problems using HTML inside the button and might be hard for screen readers/don't know what to do besides using a eventlistener in JS-->
             <button class="join-bttn"><a href="join.html">Join Us</a></button>
         </section>
         <!--4-->
         <section class="weather">
             <h2>Weather</h2>
                 <div id="current-temp"></div>
-                <img id="weather-icon" src="" alt="">
-                <figcaption></figcaption>
+                <img id="weather-icon" src="#" alt="Weather Icon">
+                <div id="weather-caption"></div>
                 <div id="wind-speed"></div>
                 <div id="wind-chill"></div>
         </section>
@@ -88,10 +89,8 @@
             <div class="spotlight-1">
                 <h2>Pike Place Pantry</h2>
                 <h3>Locally sourced foods and artisanal products</h3>
-                <picture>
-                    <a href="#"><img src="images/ppp.webp" alt="Pike Place Pantry Ad"></a>
-                </picture>
-                <hr>
+                <a href="https://www.pikeplacemarket.org/parking-directions/"><img src="images/ppp.webp" alt="Pike Place Pantry Ad"></a>
+
                 <p>info@pikeplacepantry.com</p>
                 <p>(206) 555-1234</p> 
                 <p>www.pikeplacepantry.com</p> 
@@ -99,10 +98,8 @@
             <div class="spotlight-2">
                 <h2>Emerald City Escapes</h2>
                 <h3>Explore the beauty of Seattle and the Pacific Northwest</h3>
-                <picture>
-                    <a href="#"><img src="images/ece.webp" alt="Emerald City Escapes Ad"></a>
-                </picture>
-                <hr>
+                <a href="https://seattleescapegames.com/"><img src="images/ece.webp" alt="Emerald City Escapes Ad"></a>
+
                 <p>info@emeraldcityescapes.com</p>
                 <p>(206) 555-5678</p> 
                 <p>www.emeraldcityescapes.com</p>
@@ -110,10 +107,7 @@
             <div class="spotlight-3">
                 <h2>Puget Sound Souvenirs</h2>
                 <h3>Unique gifts and souvenirs from the Pacific Northwest</h3>
-                <picture>
-                    <a href="#"><img src="images/pss.webp" alt="Puget Sound Souvenirs Ad"></a>
-                </picture>
-                <hr>
+                <a href="https://www.pacificnorthwestshop.com/shop-by-theme/all-made-in-washington-products-and-gifts.html"><img src="images/pss.webp" alt="Puget Sound Souvenirs Ad"></a>
                 <p>info@pugetsoundsouvenirs.com</p>
                 <p>(206) 555-9012</p> 
                 <p>www.pugetsoundsouvenirs.com</p>
@@ -142,16 +136,6 @@
         </section>
         <section class="info_bottom">
             <h4><span id="copyright"></span> Seattle Metropolitan Chamber of Commerce | Enrique Arias | WDD 230 Project | <span id="lastModDate"></span></h4>
-            <!--
-            <span id="copyright"></span>
-            <p> Seattle Metropolitan Chamber of Commerce</p> 
-            <p> | </p> 
-            <p>Enrique Arias</p>
-            <p> | </p> 
-            <p>WDD 230 Project</p>
-            <p> | </p> 
-            <span id="lastModDate"></span>
-            -->  
         </section>
     </footer>
     <script src="scripts/main.js"></script>
