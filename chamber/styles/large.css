@@ -347,24 +347,13 @@ footer section img {
 }
 
 /***************************************
-************** Join Menu ***************
+************** Join Us ***************
 ****************************************/
 .join-grid {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.join-grid form {
-    width: 100%;
-}
-
-.join-grid form {
-    display: grid;
-    grid-gap: 15px;
-    max-width: 500px;
-    margin: 0 auto;
 }
 
 .join-grid h2, .join-grid div {
@@ -389,51 +378,96 @@ footer section img {
     cursor: pointer;
 }
 
+.join-grid button:hover {
+    background-color: var(--accent1);
+    transition: .5s ease-in-out;
+}
+
+.join-grid form {
+  display: grid;
+  grid-gap: 1em;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
 form {
-/* Center the form on the page */
-    margin: 0 auto;
-    width: 500px;
-    /* Form outline */
-    padding: 1em;
-    border: 1px solid #ccc;
-    background-color: var(--primary);
-    border-radius: 1em;
-    color: #FFFFFF;
+  margin: 0 auto;
+  padding: 2em;
+  border: 1px solid #ccc;
+  background-color: var(--primary);
+  border-radius: 1em;
+  color: #FFFFFF;
+}
+
+.table-container {
+  overflow-x: auto;
 }
 
 table {
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
 }
 
-
-th, 
-td {
-    padding: 10px 20px;
-    border: 5px solid #e2e2e2;
+td, th {
+  text-align: left;
+  padding: 8px;
 }
 
-td {
-    text-align: center;
+th {
+  background-color: #f2f2f2;
 }
 
+/* Style for the first row */
 tr:nth-child(1) td {
-    background-color: var(--primary);
-    color: white;
-    font-size: 28px;   
+  background-color: var(--primary);
+  color: white;
+  font-size: 28px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
+/* Style for the second row */
 tr:nth-child(2) td {
-    background-color: gray;
-    color: white;
+  background-color: var(--accent2);
+  color: white;
 }
 
-tr:nth-child(4) {
-    background-color: #f3f3f3;
+/* Alternate row styling */
+tr:nth-child(odd):not(:first-child) {
+  background-color: #f3f3f3;
 }
 
+/* Styling for cells starting from the third row */
 tr:nth-child(n+3) td:nth-child(n+1) {
-    color: black;
+  color: black;
+  text-align: center;
 }
+
+@media screen and (max-width: 767px) {
+  td, th {
+    display: block;
+  }
+
+  th {
+    text-align: center;
+  }
+
+  td:before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  td {
+    clear: both;
+    padding-left: 50%;
+  }
+}
+
+
 
 /***************************************
 ************** Contact ***************
