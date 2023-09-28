@@ -1,0 +1,58 @@
+{
+  "businesses": [
+    {
+      "name": "Cascadia Veterinary",
+      "imgSrc": "images/cascadia.webp",
+      "imgAlt": "Business logo for Cascadia Veterinary",
+      "phone": "(206) 555-1201",
+      "address": "1272 Pike St, Seattle, WA 98101",
+      "membership": "Silver",
+      "website": "https://www.cascadiaveterinary.com"
+    },
+    {
+      "name": "Emerald City BBQ",
+      "imgSrc": "images/emeraldcity.webp",
+      "imgAlt": "Business logo for Emerald City BBQ",
+      "phone": "(206) 555-2302",
+      "address": "8521 NE 8th St, Bellevue, WA 98004",
+      "membership": "Gold",
+      "website": "https://www.emeraldcitybbq.com"
+    },
+    {
+      "name": "Rainier Rib Shack",
+      "imgSrc": "images/pitrack.webp",
+      "imgAlt": "Business logo for Rainier Rib Shack",
+      "phone": "(206) 555-3403",
+      "address": "19600 International Blvd, SeaTac, WA 98188",
+      "membership": "Bronze",
+      "website": "https://www.rainierribshack.com"
+    },
+    {
+      "name": "Puget Pit",
+      "imgSrc": "images/pugetpit.webp",
+      "imgAlt": "Business logo for Puget Pit",
+      "phone": "(425) 555-4504",
+      "address": "500 Mercer St, Seattle, WA 98109",
+      "membership": "Platinum",
+      "website": "https://www.pugetpit.com"
+    },
+    {
+      "name": "King County Barber Shop",
+      "imgSrc": "images/kingcounty.webp",
+      "imgAlt": "Business logo for King County Barber Shop",
+      "phone": "(425) 555-5605",
+      "address": "2701 Broadway Ave E, Seattle, WA 98102",
+      "membership": "Silver",
+      "website": "https://www.kingcountybarbershop.com"
+    },
+    {
+      "name": "West Coast Game Studio",
+      "imgSrc": "images/westcoast.webp",
+      "imgAlt": "Business logo for West Coast Game Studio",
+      "phone": "(206) 555-6706",
+      "address": "11001 NE 12th St, Bellevue, WA 98004",
+      "membership": "Gold",
+      "website": "https://www.westcoastgamestudio.com"
+    }
+  ]
+}
